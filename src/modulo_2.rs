@@ -67,9 +67,91 @@ TODO 6.	Declara un carácter Unicode inmutable que represente la clasificación 
 
     let caracter:char='M';
 
-    print!("{}", caracter);
+    println!("{}", caracter);
 
 }
 
 // ! Regla 2: mut Mutabilidad
+
+
+pub fn ejercicio7(){
+
+/*
+TODO 7.Crea una variable mutable numérica para la vida de un jugador, imprímela, réstale 50 puntos y vuelve a imprimirla.
+*/
+    let mut edad:u8=100;
+
+    println!("{}",edad);
+
+    edad=edad-50;
+
+    println!("{}",edad);
+
+}
+
+pub fn ejercicio8(){
+
+/*
+TODO 8. Usa un operador de asignación compuesta (+=) con una variable mut para sumar 10 a un puntaje inicial.
+*/
+
+    let mut puntaje:i8=0;
+
+    puntaje+=10;
+
+    println!("{}",puntaje);
+
+}
+
+pub fn ejercicio9(){
+
+/*
+TODO 9. Cambia una variable booleana de estado de false a true simulando el encendido de un motor.
+*/
+
+    let mut estado:bool=false;
+    estado=true;
+
+    println!("{}",estado);
+
+}
+
+pub fn ejercicio10(){
+
+/*
+TODO 10. Muta una coordenada en formato flotante (f32) sumándole 2.5 a su valor original.
+*/
+
+    let mut ejex:f32=10.5;
+    ejex+=2.5;
+
+    println!("{}",ejex);
+
+}
+
+pub fn ejercicio11(){
+
+/*
+TODO 11. Crea un texto mutable usando String::from("Hola") y agrégale más texto usando el método .push_str(" Mundo").
+*/
+
+    let mut texto:String=String::from("Hola");
+    (&mut texto).push_str(" Mundo");
+
+    println!("{}",texto);
+
+}
+
+pub fn ejercicio12(){
+
+/*
+TODO 12. Declara una variable mut de tipo i16, asígnale el valor 500, y luego cámbialo a -500 para demostrar la conservación del tipo.
+*/
+
+    let mut desconocido:i16=500;
+    desconocido=-500;
+
+    println!("{}",desconocido);
+
+}
 
