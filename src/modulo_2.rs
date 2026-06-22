@@ -155,3 +155,88 @@ TODO 12. Declara una variable mut de tipo i16, asígnale el valor 500, y luego c
 
 }
 
+// ! Regla 3: Shadowing
+
+pub fn ejercicio13(){
+
+/*
+TODO 13. Usa shadowing para sumar 1 a una variable inmutable que indica el nivel de un usuario, sin usar la palabra mut.
+*/
+
+    let lvlusuario:u8=5;
+    let lvlusuario:u8=6;
+
+    println!("{}",lvlusuario);
+
+}
+
+pub fn ejercicio14(){
+
+/*
+TODO 14. Usa shadowing para cambiar drásticamente el tipo de dato de una variable (inicia como texto "100" y hazle shadowing para que sea el número 100).
+*/
+
+    let shadowing:String=String::from("100");
+    let shadowing:u8=100;
+
+    println!("{}",shadowing);
+
+}
+
+pub fn ejercicio15() {
+
+/*
+TODO 15. Usa shadowing para extraer la longitud de un texto usando el método .len(), conservando exactamente el mismo nombre de la variable original.
+*/
+
+    let palabralarga:String = String::from("Lopadotemachoselachogaleokranioleipsanodrimhypotrimmatosilphioparaomelitokatakechymenokichlepikossyphophattoperisteralektryonoptekephalliokigklopeleiolagoiosiraiobaphetragano");
+
+    let palabralarga:usize=palabralarga.len();
+
+    println!("{}",palabralarga);
+
+}
+
+pub fn ejercicio16(){
+
+/*
+TODO 16. Declara una variable mut, modifícala matemáticamente, y luego usa shadowing (un nuevo let) para "congelarla" y volverla inmutable.
+*/
+    let mut numero:u8=5;
+    numero*=2;
+
+    let numero:u8=numero;
+
+    println!("{}",numero);
+
+}
+
+pub fn ejercicio17(){
+
+/*
+TODO 17. Aplica shadowing múltiple en cascada (tres veces seguidas sobre la misma variable) para multiplicar, restar y dividir un número.
+*/
+    let mut numsrd:u8=15;
+    let mut numsrd:u8 =numsrd*7;
+    let mut numsrd:u8=numsrd-3;
+    let mut numsrd:u8=numsrd/11;
+
+    println!("{}",numsrd);
+
+}
+
+pub fn ejercicio18(){
+
+/*
+TODO 18. Demuestra el shadowing con bloques internos: crea una variable externa, hazle shadowing dentro de unas llaves { }, e imprímela dentro y fuera para ver la diferencia.
+*/
+    let mut global:u8=200;
+
+    {
+    let mut global:u8=global+10;
+    println!("{}",global);
+    }
+
+    println!("{}",global);
+
+}

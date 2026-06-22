@@ -23,6 +23,14 @@ fn main() {
     modulo_2::ejercicio10();
     modulo_2::ejercicio11();
     modulo_2::ejercicio12();
-    //info Regla 3:
+    //info Regla 3: Shadowing
+    modulo_2::ejercicio13();
+    modulo_2::ejercicio14();
+    modulo_2::ejercicio15();
+    modulo_2::ejercicio16();
+    modulo_2::ejercicio17();
+    modulo_2::ejercicio18();
+    // info Regla 4: Enteros
+
 
 }
