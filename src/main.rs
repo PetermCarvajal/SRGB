@@ -37,6 +37,5 @@ fn main() {
     modulo_2::ejercicio22();
     modulo_2::ejercicio23();
     modulo_2::ejercicio24();
-    //info Regla 5: Enteros sin Signo
 
 }
