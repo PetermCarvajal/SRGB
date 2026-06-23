@@ -30,7 +30,13 @@ fn main() {
     modulo_2::ejercicio16();
     modulo_2::ejercicio17();
     modulo_2::ejercicio18();
-    // info Regla 4: Enteros
-
+    // info Regla 4: Enteros con Signo
+    modulo_2::ejercicio19();
+    modulo_2::ejercicio20();
+    modulo_2::ejercicio21();
+    modulo_2::ejercicio22();
+    modulo_2::ejercicio23();
+    modulo_2::ejercicio24();
+    //info Regla 5: Enteros sin Signo
 
 }

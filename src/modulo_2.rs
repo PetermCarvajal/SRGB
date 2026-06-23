@@ -225,18 +225,83 @@ TODO 17. Aplica shadowing múltiple en cascada (tres veces seguidas sobre la mis
 
 }
 
-pub fn ejercicio18(){
-
-/*
-TODO 18. Demuestra el shadowing con bloques internos: crea una variable externa, hazle shadowing dentro de unas llaves { }, e imprímela dentro y fuera para ver la diferencia.
-*/
-    let mut global:u8=200;
+pub fn ejercicio18() {
+    /*
+    TODO 18. Demuestra el shadowing con bloques internos: crea una variable externa, hazle shadowing dentro de unas llaves { }, e imprímela dentro y fuera para ver la diferencia.
+    */
+    let mut global: u8 = 200;
 
     {
-    let mut global:u8=global+10;
-    println!("{}",global);
+        let mut global: u8 = global + 10;
+        println!("{}", global);
     }
 
     println!("{}",global);
+
+}
+
+// ! Regla 4: Enteros con signo
+
+pub fn ejercicio19(){
+
+/*
+TODO 19. Declara un entero muy pequeño (i8) con un valor de temperatura bajo cero y muéstralo.
+ */
+
+    let entero:i8=-10;
+    println!("{}",entero);
+
+}
+
+pub fn ejercicio20(){
+
+/*
+TODO 20. Declara un entero estándar (i32) para representar el saldo negativo de una cuenta bancaria.
+*/
+
+    let entero:i32=-100000;
+}
+
+pub fn ejercicio21(){
+
+/*
+TODO 	21. Declara un entero grande (i64) para representar el déficit económico de un país.
+*/
+
+    let deficit:i64=-25415412536;
+    println!("{}",deficit);
+
+}
+
+pub fn ejercicio22(){
+
+/*
+TODO 22. Declara el entero más masivo disponible (i128) con un valor negativo de 30 dígitos.
+*/
+
+    let enteromas:i128=-123456789123456789123456789123;
+
+}
+
+pub fn ejercicio23(){
+
+/*
+TODO 23. Declara una variable de altitud negativa usando el sufijo de tipo directamente en el número (ej. -300i16) sin usar los dos puntos en el nombre.
+*/
+
+    let altitud=-30016;
+    println!("{}",altitud);
+
+}
+
+pub fn ejercicio24(){
+
+/*
+TODO 24. Imprime el límite matemático mínimo (el número negativo más bajo) del tipo i32 usando la propiedad i32::MIN.
+*/
+
+    let mini:i32=i32::MIN;
+
+    println!("{}",mini);
 
 }
