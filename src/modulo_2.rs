@@ -311,5 +311,150 @@ TODO 24. Imprime el límite matemático mínimo (el número negativo más bajo) 
 // ! Regla 5:  sin signo
 
 pub fn ejercicio25(){
+/*
+TODO 25. Declara un byte puro (u8) con el valor máximo permitido (255) simulando el color azul.
+*/
+
+    let u8max:u8=255;
+
+    println!("{}",u8max);
 
 }
+
+pub fn ejercicio26(){
+
+/*
+TODO 26. Declara una variable para un puerto de red usando u16 (ej. 443).
+*/
+
+    let puerto:u16=443;
+
+    println!("{}",puerto);
+
+}
+
+pub fn ejercicio27(){
+
+/*
+TODO 27. Declara la edad de un edificio garantizando que nunca sea negativa usando u32.
+*/
+
+    let edad:u32=20;
+
+    println!("{}",edad);
+
+}
+
+pub fn ejercicio28(){
+
+/*
+TODO 28. Declara un identificador único (ID) gigante de una base de datos usando u64.
+*/
+
+    let id:u64=1574856654656;
+
+    println!("{}",id);
+}
+
+pub fn ejercicio29(){
+
+/*
+TODO 29. Declara el número de estrellas en una galaxia usando guiones bajos como separadores visuales para facilitar su lectura (ej. 100_000_000).
+*/
+
+    let estrellas:u64=100_000_000;
+
+    println!("{}",estrellas);
+
+}
+
+pub fn ejercicio30(){
+
+/*
+TODO 30. Imprime el valor máximo que cabe en un u16 usando la propiedad u16::MAX.
+
+*/
+
+    let maxu16:u16=u16::MAX;
+
+    println!("{}",maxu16);
+
+}
+
+// ! Regla 6: Enteros dependientes de Arquitectura
+
+pub fn ejercicio31(){
+
+/*
+TODO 31. Declara un índice de posición de un menú (usize) inicializado en 0.
+*/
+
+    let menu:usize=0;
+
+    println!("{}",menu);
+
+}
+
+pub fn ejercicio32(){
+
+/*
+TODO 32. Declara un desplazamiento de puntero en memoria que retroceda 8 posiciones usando isize.
+*/
+
+    let desplazamiento:isize=-8;
+
+    println!("{}",desplazamiento);
+
+}
+
+pub fn ejercicio33(){
+
+/*
+TODO 33. Infiere el tipo usize usando el sufijo directamente en el número (ej. 500usize) para simular la capacidad de un inventario.
+*/
+
+    let infiere:usize=500usize;
+
+    println!("{}",infiere);
+
+}
+
+pub fn ejercicio34(){
+
+/*
+TODO 34. Asigna el tamaño en bytes de una descarga usando usize y separadores visuales.
+*/
+
+    let descaraga:usize=1_024_000usize;
+
+    println!("{}",descaraga);
+
+}
+
+pub fn ejercicio35(){
+
+/*
+TODO 35. Demuestra el uso de isize sumando un índice actual (positivo) con un salto relativo (negativo) y mostrando el resultado.
+*/
+
+    let indice_actual:isize=16;
+    let salto_relativo:isize=-3;
+
+    println!("{} + '('{}')' = {})",indice_actual,salto_relativo,indice_actual+salto_relativo);
+
+}
+
+pub fn ejercicio36(){
+
+/*
+TODO 36. Imprime la capacidad máxima de tu procesador para indexar memoria usando usize::MAX.
+*/
+
+    let capacidad_maxima:usize=usize::MAX;
+
+    println!("{}",capacidad_maxima);
+
+}
+
+// ! Regla 7: Flotantes de Precisión Simple
+

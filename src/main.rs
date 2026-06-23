@@ -39,6 +39,20 @@ fn main() {
     modulo_2::ejercicio24();
     // info Regla 5: Entero sin Signo
     modulo_2::ejercicio25();
+    modulo_2::ejercicio26();
+    modulo_2::ejercicio27();
+    modulo_2::ejercicio28();
+    modulo_2::ejercicio29();
+    modulo_2::ejercicio30();
+    //info Regla 6: Enteros de Arquitectura
+    modulo_2::ejercicio31();
+    modulo_2::ejercicio32();
+    modulo_2::ejercicio33();
+    modulo_2::ejercicio34();
+    modulo_2::ejercicio35();
+    modulo_2::ejercicio35();
+    //info Regla 5: Flotantes de Precisión Simple
+    
 
 
 
