@@ -10,6 +10,8 @@ TODO 1.	Declara una variable inmutable llamada sistema de tipo texto implícito 
 
     println!("{}",sistema);
 
+    let string:String=String::from("EJEMPLO");
+    let nombre:i8=-128;
 }
 
 pub fn ejercicio2(){
@@ -303,5 +305,11 @@ TODO 24. Imprime el límite matemático mínimo (el número negativo más bajo) 
     let mini:i32=i32::MIN;
 
     println!("{}",mini);
+
+}
+
+// ! Regla 5:  sin signo
+
+pub fn ejercicio25(){
 
 }
