@@ -534,3 +534,86 @@ TODO 42. Divide un f32 (ej. 10.0) entre 0.0 e imprime el resultado para observar
     println!("{} / {} = {} ",division,entre,division/entre);
 
 }
+
+// ! Regla R8: Flotantes de Precisión Doble
+
+pub fn ejercicio43(){
+
+/*
+TODO 43. Declara un número decimal sin indicar el tipo para demostrar que Rust asigna f64 por defecto.
+*/
+
+    let nada=6.0;
+
+    println!("{}",nada);
+
+}
+
+pub fn ejercicio44(){
+
+/*
+TODO 44. Declara una coordenada GPS de longitud con al menos 12 decimales de precisión usando f64.
+*/
+
+    let coordernada_GPS:f64=1.123456789321;
+
+    println!("{}",coordernada_GPS);
+
+}
+
+pub fn ejercicio45(){
+
+/*
+TODO 45. Usa notación científica para calcular la distancia entre dos planetas (ej. 2.25e8).
+*/
+
+    let distancia_planetaria:f64=2.5e8;
+
+    let otra_distancia:f64=13.9e18;
+
+    println!("{}-{}={}",otra_distancia,distancia_planetaria,otra_distancia-distancia_planetaria);
+
+}
+
+pub fn ejercicio46(){
+
+/*
+TODO 46. Asigna explícitamente el tipo f64 a un número negativo cerrado (ej. -100.0).
+*/
+
+    let explicitamente:f64=-100.0;
+
+    println!("{}",explicitamente);
+
+}
+
+pub fn ejercicio47(){
+
+/*
+TODO 47. Imprime un f64 (que tenga muchos decimales) limitando visualmente la salida a solo 2 decimales usando el formateador {:.2}.
+*/
+
+    let muchos_decimales:f64=1.131231231231231231231321231231231323123123123123;
+
+    println!("Limitar la cantidad de Decimales Visibles :\n Original{}\nLimitado (:.# ejemplo :.2)\n{:.2}",muchos_decimales,muchos_decimales);
+
+}
+
+pub fn ejercicio48(){
+
+/*
+TODO 48. Calcula el área de un círculo usando un f64 para el radio y un f64 altamente preciso para el valor de Pi.
+*/
+
+    let radio:f64=4.1256;
+
+    let PI:f64=3.141592653589793;
+
+    let cuadrado:f64=radio*radio;
+
+    println!("El area del Circulo es: {}",PI*cuadrado);
+
+}
+
+// ! Regla 9: Booleanos
+

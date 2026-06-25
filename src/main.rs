@@ -51,15 +51,22 @@ fn main() {
     modulo_2::ejercicio34();
     modulo_2::ejercicio35();
     modulo_2::ejercicio36();
-    //info Regla 5: Flotantes de Precisión Simple
+    //info Regla 7: Flotantes de Precisión Simple
     modulo_2::ejercicio37();
     modulo_2::ejercicio38();
     modulo_2::ejercicio39();
     modulo_2::ejercicio40();
     modulo_2::ejercicio41();
     modulo_2::ejercicio42();
-
-
+    //info Regla 8:Flotantes con Doble Precisión
+    modulo_2::ejercicio43();
+    modulo_2::ejercicio44();
+    modulo_2::ejercicio45();
+    modulo_2::ejercicio46();
+    modulo_2::ejercicio47();
+    modulo_2::ejercicio48();
+    //info Regla 9:Booleanos
+    
 
 
 
