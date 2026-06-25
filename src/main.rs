@@ -50,9 +50,15 @@ fn main() {
     modulo_2::ejercicio33();
     modulo_2::ejercicio34();
     modulo_2::ejercicio35();
-    modulo_2::ejercicio35();
+    modulo_2::ejercicio36();
     //info Regla 5: Flotantes de Precisión Simple
-    
+    modulo_2::ejercicio37();
+    modulo_2::ejercicio38();
+    modulo_2::ejercicio39();
+    modulo_2::ejercicio40();
+    modulo_2::ejercicio41();
+    modulo_2::ejercicio42();
+
 
 
 

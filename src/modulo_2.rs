@@ -458,3 +458,79 @@ TODO 36. Imprime la capacidad máxima de tu procesador para indexar memoria usan
 
 // ! Regla 7: Flotantes de Precisión Simple
 
+pub fn ejercicio37(){
+
+/*
+TODO 37. Declara una variable de velocidad del viento con un decimal explícito usando f32.
+*/
+
+let vel_viento:f32=3.2;
+
+println!("{}",vel_viento);
+
+}
+
+pub fn ejercicio38(){
+
+/*
+TODO 38. Declara un número entero, pero obliga al compilador a tratarlo como decimal añadiendo .0 al final, especificando tipo f32.
+*/
+
+    let int_impostor:f32=5.0;
+
+    println!("{}",int_impostor);
+
+}
+
+pub fn ejercicio39(){
+
+/*
+TODO 39. Declara un f32 usando notación científica (ej. 1.5e-3) para simular la masa de un insecto.
+*/
+
+    let notacion_cientifica:f32=1.5e-3;
+
+    println!("{}",notacion_cientifica);
+
+}
+
+pub fn ejercicio40(){
+
+/*
+TODO 40. Usa el sufijo de tipo para flotantes directamente en el número (ej. -12.5f32) para una coordenada X.
+*/
+
+    let flotanteexplicito:f32=-12.5f32;
+
+    println!("{}",flotanteexplicito);
+
+}
+
+pub fn ejercicio41(){
+
+/*
+TODO 41. Realiza y muestra la multiplicación entre dos variables f32 (cantidad y peso).
+*/
+
+    let  cantidad:f32=2.1;
+
+    let peso:f32=4.2;
+
+    println!("{} x {} = {}",cantidad,peso,cantidad*peso);
+
+}
+
+
+pub fn ejercicio42(){
+
+/*
+TODO 42. Divide un f32 (ej. 10.0) entre 0.0 e imprime el resultado para observar cómo Rust maneja el infinito por hardware.
+*/
+
+    let division:f32=10.0;
+
+    let entre:f32=0.0;
+
+    println!("{} / {} = {} ",division,entre,division/entre);
+
+}
