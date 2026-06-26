@@ -66,7 +66,12 @@ fn main() {
     modulo_2::ejercicio47();
     modulo_2::ejercicio48();
     //info Regla 9:Booleanos
-    
+    modulo_2::ejercicio49();
+    modulo_2::ejercicio50();
+    modulo_2::ejercicio51();
+    modulo_2::ejercicio52();
+    modulo_2::ejercicio53();
+    modulo_2::ejercicio54();
 
 
 

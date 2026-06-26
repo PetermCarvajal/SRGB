@@ -617,3 +617,86 @@ TODO 48. Calcula el área de un círculo usando un f64 para el radio y un f64 al
 
 // ! Regla 9: Booleanos
 
+pub fn ejercicio49(){
+
+/*
+TODO 49. Declara un booleano explícito que indique si un juego ha terminado (true).
+*/
+
+    let estado_juego:bool=true;
+
+    print!("{}",estado_juego);
+
+}
+
+pub fn ejercicio50(){
+
+/*
+TODO 50. Declara un booleano explícito que indique si hay conexión a internet (false).
+*/
+
+    let estado_internet:bool=false;
+
+    print!("{}",estado_internet);
+
+}
+
+pub fn ejercicio51(){
+
+/*
+TODO 51. Genera y guarda en una variable un booleano evaluando si una clave ingresada es igual (==) a la clave guardada.
+*/
+
+    let pin_guardado:String=String::from("123456");
+
+    let mut clave_ingresada:String=String::new();
+
+    println!("Ingrese el Pin");
+
+    let es_valido:bool=pin_guardado==clave_ingresada;
+
+    println!("¿La Contraseña es Correcta? = {}",es_valido);
+
+}
+
+pub fn ejercicio52(){
+
+/*
+TODO 52. Genera un booleano evaluando si la suma de 2 + 2 es diferente (!=) de 5.
+*/
+
+    let diferente:bool=(2+2)!=5;
+
+    println!("{}",diferente);
+
+}
+
+pub fn ejercicio53() {
+
+/*
+TODO 53. Genera un booleano evaluando si la experiencia actual del jugador es mayor o igual (>=) a la experiencia requerida para subir de nivel.
+*/
+
+    let xp_requerida: u8 = 254;
+
+    let xp_actual: u8 = 255;
+
+    let cumple: bool = xp_actual >= xp_requerida;
+
+    println!("{}", cumple);
+
+}
+
+pub fn ejercicio54(){
+
+/*
+TODO 54. Invierte el valor de un booleano de estado de alarma usando el operador lógico de negación (!).
+*/
+
+    let estado_alarma:bool=false;
+
+    let estado_alarma_interrumptor:bool=!estado_alarma;
+
+    println!("{}",estado_alarma_interrumptor);
+    
+}
