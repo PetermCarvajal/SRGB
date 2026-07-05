@@ -700,3 +700,78 @@ TODO 54. Invierte el valor de un booleano de estado de alarma usando el operador
     println!("{}",estado_alarma_interrumptor);
     
 }
+
+// ! Regla 10: Char
+
+pub fn ejercicio_55(){
+
+/*
+TODO 55. Declara una vocal simple usando comillas simples.
+*/
+
+    let vocal:char='a';
+
+    println!("{}",vocal);
+
+}
+
+pub fn ejercicio_56(){
+
+/*
+TODO 56. Declara un número como carácter visual (entre comillas simples) para representar la etiqueta de un botón.
+*/
+
+    let numero:char='1';
+
+    println!("{}",numero);
+
+}
+
+pub fn ejercicio_57(){
+
+/*
+TODO 57. Declara un emoji (ej. 🚀) explícitamente como char.
+*/
+
+    let emoji:char='🚀';
+
+    println!("{}",emoji);
+
+}
+
+pub fn ejercici_58(){
+
+/*
+TODO 58. Declara un espacio en blanco estricto como char.
+*/
+
+    let espacio:char=' ';
+
+    println!("{}",espacio);
+
+}
+
+pub fn ejercici_59(){
+
+/*
+TODO 59. Declara una letra del alfabeto griego (ej. 'Ω') para demostrar el soporte Unicode de 4 bytes.
+*/
+
+    let omega:char='Ω';
+
+    println!("{}",omega);
+
+}
+
+pub fn ejercici_60(){
+
+/*
+TODO 60. Imprime dos variables de tipo char distintas, una al lado de la otra, sin espacios en el formato de salida.
+*/
+
+    let char1:char='P';
+    let char2:char='N';
+
+    println!("{}{}",char1,char2);
+
+}

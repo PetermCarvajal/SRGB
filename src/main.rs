@@ -72,7 +72,6 @@ fn main() {
     modulo_2::ejercicio52();
     modulo_2::ejercicio53();
     modulo_2::ejercicio54();
-
-
+    //info Regla 10: Unicode (Char)
 
 }
