@@ -9,9 +9,7 @@ TODO 1.	Declara una variable inmutable llamada sistema de tipo texto implícito 
     let sistema:&str="Linux";
 
     println!("{}",sistema);
-
-    let string:String=String::from("EJEMPLO");
-    let nombre:i8=-128;
+    
 }
 
 pub fn ejercicio2(){
