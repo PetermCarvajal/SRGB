@@ -134,7 +134,7 @@ TODO 10. Muta una coordenada en formato flotante (f32) sumándole 2.5 a su valor
 pub fn ejercicio11(){
 
 /*
-TODO 11. Crea un texto mutable usando String::from("Hola") y agrégale más texto usando el método .push_str(" Mundo").
+TODO 11. Crea un texto mutable usando String::from("Hola") y agrégale más texto usando el método .pushstr(" Mundo").
 */
 
     let mut texto:String=String::from("Hola");
@@ -359,10 +359,10 @@ TODO 28. Declara un identificador único (ID) gigante de una base de datos usand
 pub fn ejercicio29(){
 
 /*
-TODO 29. Declara el número de estrellas en una galaxia usando guiones bajos como separadores visuales para facilitar su lectura (ej. 100_000_000).
+TODO 29. Declara el número de estrellas en una galaxia usando guiones bajos como separadores visuales para facilitar su lectura (ej. 100000000).
 */
 
-    let estrellas:u64=100_000_000;
+    let estrellas:u64=100000000;
 
     println!("{}",estrellas);
 
@@ -425,7 +425,7 @@ pub fn ejercicio34(){
 TODO 34. Asigna el tamaño en bytes de una descarga usando usize y separadores visuales.
 */
 
-    let descaraga:usize=1_024_000usize;
+    let descaraga:usize=1024000usize;
 
     println!("{}",descaraga);
 
@@ -437,10 +437,10 @@ pub fn ejercicio35(){
 TODO 35. Demuestra el uso de isize sumando un índice actual (positivo) con un salto relativo (negativo) y mostrando el resultado.
 */
 
-    let indice_actual:isize=16;
-    let salto_relativo:isize=-3;
+    let indiceactual:isize=16;
+    let saltorelativo:isize=-3;
 
-    println!("{} + '('{}')' = {})",indice_actual,salto_relativo,indice_actual+salto_relativo);
+    println!("{} + '('{}')' = {})",indiceactual,saltorelativo,indiceactual+saltorelativo);
 
 }
 
@@ -450,9 +450,9 @@ pub fn ejercicio36(){
 TODO 36. Imprime la capacidad máxima de tu procesador para indexar memoria usando usize::MAX.
 */
 
-    let capacidad_maxima:usize=usize::MAX;
+    let capacidadmaxima:usize=usize::MAX;
 
-    println!("{}",capacidad_maxima);
+    println!("{}",capacidadmaxima);
 
 }
 
@@ -464,9 +464,9 @@ pub fn ejercicio37(){
 TODO 37. Declara una variable de velocidad del viento con un decimal explícito usando f32.
 */
 
-let vel_viento:f32=3.2;
+let velviento:f32=3.2;
 
-println!("{}",vel_viento);
+println!("{}",velviento);
 
 }
 
@@ -476,9 +476,9 @@ pub fn ejercicio38(){
 TODO 38. Declara un número entero, pero obliga al compilador a tratarlo como decimal añadiendo .0 al final, especificando tipo f32.
 */
 
-    let int_impostor:f32=5.0;
+    let intimpostor:f32=5.0;
 
-    println!("{}",int_impostor);
+    println!("{}",intimpostor);
 
 }
 
@@ -488,9 +488,9 @@ pub fn ejercicio39(){
 TODO 39. Declara un f32 usando notación científica (ej. 1.5e-3) para simular la masa de un insecto.
 */
 
-    let notacion_cientifica:f32=1.5e-3;
+    let notacioncientifica:f32=1.5e-3;
 
-    println!("{}",notacion_cientifica);
+    println!("{}",notacioncientifica);
 
 }
 
@@ -555,9 +555,9 @@ pub fn ejercicio44(){
 TODO 44. Declara una coordenada GPS de longitud con al menos 12 decimales de precisión usando f64.
 */
 
-    let coordernada_GPS:f64=1.123456789321;
+    let coordernadaGPS:f64=1.123456789321;
 
-    println!("{}",coordernada_GPS);
+    println!("{}",coordernadaGPS);
 
 }
 
@@ -567,11 +567,11 @@ pub fn ejercicio45(){
 TODO 45. Usa notación científica para calcular la distancia entre dos planetas (ej. 2.25e8).
 */
 
-    let distancia_planetaria:f64=2.5e8;
+    let distanciaplanetaria:f64=2.5e8;
 
-    let otra_distancia:f64=13.9e18;
+    let otradistancia:f64=13.9e18;
 
-    println!("{}-{}={}",otra_distancia,distancia_planetaria,otra_distancia-distancia_planetaria);
+    println!("{}-{}={}",otradistancia,distanciaplanetaria,otradistancia-distanciaplanetaria);
 
 }
 
@@ -593,9 +593,9 @@ pub fn ejercicio47(){
 TODO 47. Imprime un f64 (que tenga muchos decimales) limitando visualmente la salida a solo 2 decimales usando el formateador {:.2}.
 */
 
-    let muchos_decimales:f64=1.131231231231231231231321231231231323123123123123;
+    let muchosdecimales:f64=1.131231231231231231231321231231231323123123123123;
 
-    println!("Limitar la cantidad de Decimales Visibles :\n Original{}\nLimitado (:.# ejemplo :.2)\n{:.2}",muchos_decimales,muchos_decimales);
+    println!("Limitar la cantidad de Decimales Visibles :\n Original{}\nLimitado (:.# ejemplo :.2)\n{:.2}",muchosdecimales,muchosdecimales);
 
 }
 
@@ -623,9 +623,9 @@ pub fn ejercicio49(){
 TODO 49. Declara un booleano explícito que indique si un juego ha terminado (true).
 */
 
-    let estado_juego:bool=true;
+    let estadojuego:bool=true;
 
-    print!("{}",estado_juego);
+    print!("{}",estadojuego);
 
 }
 
@@ -635,9 +635,9 @@ pub fn ejercicio50(){
 TODO 50. Declara un booleano explícito que indique si hay conexión a internet (false).
 */
 
-    let estado_internet:bool=false;
+    let estadointernet:bool=false;
 
-    print!("{}",estado_internet);
+    print!("{}",estadointernet);
 
 }
 
@@ -647,15 +647,15 @@ pub fn ejercicio51(){
 TODO 51. Genera y guarda en una variable un booleano evaluando si una clave ingresada es igual (==) a la clave guardada.
 */
 
-    let pin_guardado:String=String::from("123456");
+    let pinguardado:String=String::from("123456");
 
-    let mut clave_ingresada:String=String::new();
+    let mut claveingresada:String=String::new();
 
     println!("Ingrese el Pin");
 
-    let es_valido:bool=pin_guardado==clave_ingresada;
+    let esvalido:bool=pinguardado==claveingresada;
 
-    println!("¿La Contraseña es Correcta? = {}",es_valido);
+    println!("¿La Contraseña es Correcta? = {}",esvalido);
 
 }
 
@@ -677,11 +677,11 @@ pub fn ejercicio53() {
 TODO 53. Genera un booleano evaluando si la experiencia actual del jugador es mayor o igual (>=) a la experiencia requerida para subir de nivel.
 */
 
-    let xp_requerida: u8 = 254;
+    let xprequerida: u8 = 254;
 
-    let xp_actual: u8 = 255;
+    let xpactual: u8 = 255;
 
-    let cumple: bool = xp_actual >= xp_requerida;
+    let cumple: bool = xpactual >= xprequerida;
 
     println!("{}", cumple);
 
@@ -693,17 +693,17 @@ pub fn ejercicio54(){
 TODO 54. Invierte el valor de un booleano de estado de alarma usando el operador lógico de negación (!).
 */
 
-    let estado_alarma:bool=false;
+    let estadoalarma:bool=false;
 
-    let estado_alarma_interrumptor:bool=!estado_alarma;
+    let estadoalarmainterrumptor:bool=!estadoalarma;
 
-    println!("{}",estado_alarma_interrumptor);
+    println!("{}",estadoalarmainterrumptor);
     
 }
 
 // ! Regla 10: Char
 
-pub fn ejercicio_55(){
+pub fn ejercicio55(){
 
 /*
 TODO 55. Declara una vocal simple usando comillas simples.
@@ -715,7 +715,7 @@ TODO 55. Declara una vocal simple usando comillas simples.
 
 }
 
-pub fn ejercicio_56(){
+pub fn ejercicio56(){
 
 /*
 TODO 56. Declara un número como carácter visual (entre comillas simples) para representar la etiqueta de un botón.
@@ -727,7 +727,7 @@ TODO 56. Declara un número como carácter visual (entre comillas simples) para 
 
 }
 
-pub fn ejercicio_57(){
+pub fn ejercicio57(){
 
 /*
 TODO 57. Declara un emoji (ej. 🚀) explícitamente como char.
@@ -739,7 +739,7 @@ TODO 57. Declara un emoji (ej. 🚀) explícitamente como char.
 
 }
 
-pub fn ejercici_58(){
+pub fn ejercicio58(){
 
 /*
 TODO 58. Declara un espacio en blanco estricto como char.
@@ -751,7 +751,7 @@ TODO 58. Declara un espacio en blanco estricto como char.
 
 }
 
-pub fn ejercici_59(){
+pub fn ejercicio59(){
 
 /*
 TODO 59. Declara una letra del alfabeto griego (ej. 'Ω') para demostrar el soporte Unicode de 4 bytes.
@@ -763,7 +763,7 @@ TODO 59. Declara una letra del alfabeto griego (ej. 'Ω') para demostrar el sopo
 
 }
 
-pub fn ejercici_60(){
+pub fn ejercicio60(){
 
 /*
 TODO 60. Imprime dos variables de tipo char distintas, una al lado de la otra, sin espacios en el formato de salida.
@@ -773,5 +773,242 @@ TODO 60. Imprime dos variables de tipo char distintas, una al lado de la otra, s
     let char2:char='N';
 
     println!("{}{}",char1,char2);
+
+}
+
+// ! Regla 11: Print! sin salto de linea
+
+pub fn ejercicio61(){
+
+/*
+TODO 61. Imprime la palabra "Iniciando" sin que la consola salte de línea.
+*/
+
+    print!("Iniciando");
+
+}
+
+pub fn ejercicio62(){
+/*
+TODO 62. Imprime tres palabras separadas usando tres sentencias print! consecutivas para que formen una sola frase.
+ */
+    print!("Una ");
+    print!("Sola ");
+    print!("Frase");
+
+}
+
+pub fn ejercicio63(){
+/*
+TODO 63. Usa print! para simular la etiqueta de un formulario ("Nombre de usuario: ") dejando el cursor al lado.
+*/
+    print!("Nombre de usuario:");
+
+}
+
+pub fn ejercicio64(){
+
+/*
+TODO 64. Imprime una cadena literal y una variable tipo str en una misma línea usando un solo print!.
+ */
+
+    let variable:&str="Keep";
+
+    print!("{} calm and aprovecha el bug", variable);
+
+}
+
+pub fn ejercicio65(){
+
+/*
+TODO 65. Simula visualmente el inicio de una barra de carga imprimiendo [#### sin salto.
+*/
+
+    println!("Cargando");
+    print!("[");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("]");
+
+}
+
+pub fn ejercicio66(){
+
+/*
+TODO 66. Ejecuta un print! que muestre un estado de carga, y en la siguiente línea de código otro print! que añada " OK".
+*/
+
+    println!("Cargando");
+    print!("[");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("#");
+    print!("]");
+    println!("OK");
+
+}
+
+// ! Regla 12: println! con salto de linea
+
+pub fn ejercicio67() {
+
+/*
+TODO 67. Imprime el mensaje "Fin del programa" asegurando un salto de línea automático.
+*/
+
+    println!("Fin del programa");
+}
+
+pub fn ejercicio68(){
+
+/*
+TODO 68. Imprime dos variables numéricas en dos líneas diferentes de la consola usando dos sentencias println!.
+*/
+
+    let a:u8=10;
+    let b:u8=3;
+
+    println!("{}",a);
+    println!("{}",b);
+
+}
+
+pub fn ejercicio69(){
+
+/*
+TODO 69. Interpola una variable de texto dentro de una oración completa en un println!.
+*/
+
+    let interpolar:&str="Dios si eres ateo";
+
+    println!("Como puedes hablar de {}, en tus ojos lo veo mientras mi candela te consume.",interpolar);
+
+}
+
+pub fn ejercicio70(){
+
+/*
+TODO 70. Interpola tres variables (día, mes, año) en un solo println! formateado con barras separadoras (ej. 12/05/2026).
+*/
+    let dia:u8=7;
+    let mes:u8=07;
+    let año:u16=2026;
+
+    println!("{}/{}/{}",dia,mes,año);
+
+}
+
+pub fn ejercicio71(){
+
+/*
+TODO 71. Realiza una operación matemática de suma directamente dentro de las llaves {} del macro println!.
+*/
+
+    println!("{} + {} = {} ",600000,700000,600000+700000);
+
+}
+
+pub fn ejercicio72(){
+
+/*
+TODO 72. Usa println!() completamente vacío para generar una línea de separación visual en la consola.
+*/
+
+    println!();
+
+}
+
+// ! Regla 13: impresión de errores
+
+pub fn ejercicio73(){
+
+/*
+TODO 73. Imprime un mensaje estático de "Fallo en el sistema central" dirigido a la salida de errores.
+*/
+
+    eprintln!("Fallo en el sistema central");
+
+}
+
+pub fn ejercicio74(){
+
+/*
+TODO 74. Interpola el número del puerto (ej. 8080) en un mensaje de error usando eprintln!.
+*/
+
+    eprintln!("El puerto {} no responde",8080);
+
+}
+
+pub fn ejercicio75(){
+
+/*
+TODO 75. Combina una variable de texto (nombre del módulo) y un código de error numérico en un solo eprintln!.
+*/
+    let modulo:&str="X1125";
+    eprintln!("El módulo {} informa sobre el código de error {}",modulo,1111);
+
+}
+
+pub fn ejercicio76(){
+
+/*
+TODO 76. Imprime dos errores críticos consecutivos para confirmar que, al igual que println!, también realizan salto de línea automático.
+*/
+
+    eprintln!("Código de error: delfin");
+    eprintln!("Código de erorr: tortuga");
+
+}
+
+pub fn ejercicio77(){
+
+/*
+TODO 77. Interpola una variable char para indicar que el "Sector 'X' está comprometido" en la salida de errores.
+*/
+
+    let char:char='X';
+
+    println!("Sector {} está comprometido",char);
+
+}
+pub fn ejercicio78(){
+
+/*
+TODO 78. Crea una variable bool en false y métela en un mensaje de eprintln! indicando que el "Estado de recuperación es: false".
+*/
+
+    let bin:bool=false;
+
+    eprintln!("Estado de recuperación es: {}",bin);
 
 }
