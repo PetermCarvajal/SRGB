@@ -146,6 +146,235 @@ pub fn ejercicio90(){
 
 }
 
+// info R3 (Shadowing) + R7 (Flotantes Simples f32)
+
 pub fn ejercicio91(){
+
+    /*
+     TODO 91. Declara una variable inmutable f32 para un precio base. Usa shadowing (let nuevamente) para aplicarle un impuesto multiplicándola por 1.15.
+	*/
+
+    let precio:f32=200.000;
+
+    let precio:f32=precio*1.15;
+
+}
+
+pub fn ejercicio92(){
+
+    /*
+    TODO 92. Usa shadowing para transformar una variable que inicia como el número entero 10 a una nueva variable con el mismo nombre pero de tipo flotante (10.0f32).
+	 */
+
+    let edad:u8=23;
+
+    let edad:f32=23.0;
+
+}
+
+
+pub fn ejercicio93(){
+
+    /*
+    TODO 93. Calcula la velocidad constante ($v = d / t$). Declara $d$ y $t$ como enteros. Usa shadowing sobre una variable velocidad para forzar que el resultado final sea un f32.
+     */
+
+    let d:i8=30;
+
+    let t:i8=5;
+
+    let velocidad:f32=d as f32/t as f32;
+
+}
+
+pub fn ejercicio94() {
+
+/*
+TODO 94. Declara una temperatura en grados Celsius como f32. Usa shadowing sobre la misma variable matemática para convertir su valor a Fahrenheit ($C \times 1.8 + 32$).
+ */
+
+     let temperatura:f32=0.0;
+
+    let temperatura:f32=(temperatura*1.8)+32 as f32;
+
+}
+
+pub fn ejercicio95() {
+
+    /*
+    TODO 95. Crea un bloque interno { }. Fuera del bloque declara una gravedad de 9.8f32. Dentro del bloque, usa shadowing para cambiarla temporalmente a gravedad marciana 3.7f32.
+     */
+
+    let gravedad:f32=9.8;
+     println!("gravedad: {}",gravedad);
+    {
+        let gravedad:f32=3.7;
+        println!("gravedad: {}",gravedad);
+    }
+
+}
+
+pub fn ejercicio96() {
+
+    /*
+    TODO 96. Declara el radio de un círculo como texto ("5.5"). Usa shadowing simulado para crear la variable matemática radio como f32 (asignándole directamente el número 5.5).
+     */
+
+    let radio:&str="5.5";
+
+    let radio:f32=5.5;
+
+}
+
+// info Regla R5 (Enteros sin Signo u8 a u128) + Regla R9 (Booleanos bool)
+
+pub fn ejercicio97() {
+
+    /*
+    TODO 97. Declara una edad humana u8. En otra variable, crea un bool que evalúe si la edad es mayor o igual a 18.
+     */
+
+    let edad:u8=13;
+
+    let verificar:bool=edad>=18;
+
+}
+
+pub fn ejercicio98() {
+
+    /*
+    TODO 98. Declara los puntos de vida de un enemigo como u16. Crea una variable booleana que sea true si los puntos de vida son exactamente 0 (usando ==).
+     */
+
+    let salud_enemigo:u16=300;
+
+    let muerto:bool=salud_enemigo==0;
+
+}
+
+pub fn ejercicio99() {
+
+    /*
+    TODO 99. Declara el límite de velocidad de una vía como u8 (ej. 80) y la velocidad de un auto como u8 (ej. 95). Genera un bool que indique si hay infracción.
+     */
+
+    let limite:u8=80;
+
+    let velocidad_auto:i8=95;
+
+    let multa:bool=limite>velocidad_auto as u8;
+
+}
+
+pub fn ejercicio100(){
+
+    /*
+    TODO 100. Usa un u32 para el número de intentos de login fallidos. Crea un booleano cuenta_bloqueada que sea verdadero si los intentos son mayores a 3.
+     */
+
+    let intentos:u32=2;
+
+    let bloquea_cuenta:bool=intentos >3;
+
+}
+
+pub fn ejercicio101() {
+    /*
+    TODO 101. Declara un u64 para representar el espacio libre en un disco duro. Genera un booleano llamado alerta_espacio que evalúe si el espacio es menor a 1000.
+     */
+
+    let espacio_libre: u16 = 100;
+
+    let advertencia:bool=espacio_libre<1000;
+
+}
+
+pub fn ejercicio102() {
+
+    /*
+    TODO 102. Declara el color RGB rojo puro usando un u8 (255). Crea un booleano que verifique si el valor es distinto (!=) de 0.
+     */
+
+    let RGB:u8=255;
+
+    let distinto:bool=RGB!=0;
+
+}
+
+// info Regla 6 (Arquitectura usize / isize) + Regla 11 (print! sin salto)
+
+pub fn ejercicio103(){
+
+    /*
+    TODO 103. Declara una variable usize con el número total de archivos a procesar. Usa print! para escribir "Procesando archivo 1 de [variable]...".
+	*/
+
+    let numero_total:usize=12165321354;
+
+    print!("Procesando archivo 1 de {numero_total}");
+
+}
+
+pub fn ejercicio104(){
+
+    /*
+    TODO 104. Declara un índice de retroceso de memoria de tipo isize (-4). Imprime su valor junto con el texto "Desplazamiento aplicado: " en la misma línea usando print!.
+     */
+
+    let retroceder_memoria:isize=-4;
+
+    print!("Desplazamiento aplicado: ");
+    print!("{retroceder_memoria}")
+
+}
+
+pub fn ejercicio105() {
+
+    /*
+    TODO 105. Obtén la capacidad máxima de punteros usando usize::MAX e imprímela usando dos macros print! separados que formen una sola frase.
+     */
+
+    let capacidad_max:usize=usize::MAX;
+
+    print!("La capacidad máxima de punteros con usize es de :");
+    print!("{capacidad_max}");
+
+}
+
+pub fn ejercicio106(){
+
+    /*
+    TODO 106. Declara una posición de array en usize (ej. 5). Usa print! para simular la búsqueda: "Buscando en índice [posición]".
+     */
+
+    let pos_actual:usize=5;
+
+    print!("Buscando índice {}",pos_actual);
+
+}
+
+pub fn ejercicio107(){
+
+    /*
+    TODO 107. Combina la declaración explícita 500usize con un print! que diga "Bloque de memoria asignado: ".
+     */
+
+    let explicito=500usize;
+
+    print!("Bloque de memoria asignado {explicito}");
+
+}
+
+pub fn ejercicio108(){
+
+    /*
+    TODO 108. Declara un delta de movimiento isize positivo y luego negativo en dos variables distintas. Imprímelos consecutivos sin salto de línea.
+     */
+
+    let delta_mov:isize=123;
+
+    let alpha_mov:isize=-124;
+
+    print!("{},{}",delta_mov,alpha_mov);
 
 }
