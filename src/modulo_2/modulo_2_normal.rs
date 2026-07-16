@@ -378,3 +378,156 @@ pub fn ejercicio108(){
     print!("{},{}",delta_mov,alpha_mov);
 
 }
+
+// info Regla R8 (Flotantes Dobles f64) + Regla R13 (eprintln! Errores)
+
+pub fn ejercicio109(){
+
+    /*
+    TODO 109. Declara un f64 extremadamente preciso representando una desviación en la órbita. Usa eprintln! para mostrar "Peligro: Desviación detectada de [variable]".
+     */
+
+    let desviacion_orbita:f64=3.141516;
+
+    eprintln!("Desviación detectada de {desviacion_orbita}");
+
+}
+
+pub fn ejercicio110(){
+
+    /*
+    TODO 110. Ocurrió un error financiero por precisión. Declara una diferencia contable usando un f64 negativo e imprímela usando eprintln! limitando los decimales a {:.4}.
+     */
+
+    let diferencia_contable:f64=9.050000;
+
+    eprintln!("{:.4}",diferencia_contable);
+
+}
+
+pub fn ejercicio111(){
+
+    /*
+    TODO 111. Declara la constante matemática Pi en f64. Usa eprintln! para mostrar un error simulado: "Error de cálculo: Pi se asumió como [variable]".
+     */
+
+    const PI:f64=4.141516;
+
+    eprintln!("Error de cálculo: Pi se asumió como {PI}");
+
+}
+
+pub fn ejercicio112(){
+
+    /*
+    TODO 112. Un sensor de radiación falló. Asigna un nivel de lectura anormal usando notación científica f64 (ej. 1.5e6) y envíalo al log de errores con eprintln!.
+     */
+
+    let lectura:f64=1.5e6;
+
+    eprintln!("{lectura}");
+
+}
+
+pub fn ejercicio113(){
+
+    /*
+    TODO 113. Genera un error crítico usando eprintln! e interpola directamente una operación matemática de dos variables f64 dentro del macro.
+     */
+
+    let precio_accion:f64=213.2;
+
+    let tiempo_m:f64=60.0*45.0;
+
+    eprintln!("Perdidas monetarias ascienden {}",precio_accion*tiempo_m);
+
+}
+
+pub fn ejercicio114(){
+
+    /*
+    TODO 114. Declara el límite de tiempo de espera (timeout) de un servidor en f64 (ej. 30.0). Muestra un error indicando "Timeout agotado tras [variable] segundos".
+     */
+
+    let timeout:f64=30.0;
+
+    eprintln!("Tiempo agotado tras {timeout}");
+
+}
+
+// info Regla 10 (char) + Regla 2 (mut  Mutabilidad)
+
+pub fn ejercicio115(){
+
+    /*
+    TODO 115. Declara una calificación mutable de tipo char inicializada en 'B'. Cámbiala a 'A' simulando una corrección de nota.
+     */
+
+    let mut calificacion:char='B';
+
+    calificacion = 'A';
+
+}
+
+pub fn ejercicio116(){
+
+    /*
+    TODO 116. Crea el estado de un semáforo usando una variable mutable char ('V' para verde). Mútalo a 'A' (amarillo) y luego a 'R' (rojo).
+     */
+
+    let mut estado:char='V';
+
+    estado='A';
+
+    estado='R';
+
+}
+
+pub fn ejercicio117(){
+
+    /*
+    TODO 117. Inicializa una variable mut char con un emoji de cara triste 😢. Reasígnala para que contenga un emoji de cara feliz 😊.
+     */
+
+    let mut emoji:char='😢';
+
+    emoji='😊';
+
+}
+
+pub fn ejercicio118(){
+
+    /*
+    TODO 118. Declara la dirección de un jugador como un mut char ('N' para Norte). Modifica su dirección a 'E' (Este).
+     */
+
+    let mut direccion:char='N';
+
+    direccion='E';
+
+}
+
+pub fn ejercicio119(){
+
+    /*
+    TODO 119. Crea un carácter mutable que represente una letra minúscula 'a'. (Aunque Rust tiene métodos para mayúsculas, simplemente reasígnala manualmente a 'A').
+     */
+
+    let mut letra:char='a';
+
+    letra='A';
+
+}
+
+pub fn ejercicio120(){
+
+    /*
+    TODO 120. Declara un símbolo matemático como mut char (ej. '+'). Mútalo para representar una resta ('-') en la siguiente línea.
+     */
+
+    let mut simbolo:char='+';
+
+    simbolo='-';
+
+}
+

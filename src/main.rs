@@ -4,7 +4,7 @@
 mod modulo_2;
 
 fn main() {
-   // println!("Iniciando Super Guía Rust Básica!");
+    // println!("Iniciando Super Guía Rust Básica!");
 
     // ! Modulo 2
 
@@ -135,8 +135,28 @@ fn main() {
     modulo_2::modulo_2_normal::ejercicio102();
 
     //info Regla 6 (Arquitectura usize / isize) + Regla 11 (print! sin salto)
+    modulo_2::modulo_2_normal::ejercicio103();
+    modulo_2::modulo_2_normal::ejercicio104();
+    modulo_2::modulo_2_normal::ejercicio105();
+    modulo_2::modulo_2_normal::ejercicio106();
+    modulo_2::modulo_2_normal::ejercicio107();
+    modulo_2::modulo_2_normal::ejercicio108();
 
+    //info Regla 8 (Flotantes Doble f64) + Regla 13 (eprintln! Errores)
+    modulo_2::modulo_2_normal::ejercicio109();
+    modulo_2::modulo_2_normal::ejercicio110();
+    modulo_2::modulo_2_normal::ejercicio111();
+    modulo_2::modulo_2_normal::ejercicio112();
+    modulo_2::modulo_2_normal::ejercicio113();
+    modulo_2::modulo_2_normal::ejercicio114();
 
+    // info Regla R10 (Caracteres Unicode char) + Regla R2 (mut Mutabilidad)
+    modulo_2::modulo_2_normal::ejercicio115();
+    modulo_2::modulo_2_normal::ejercicio116();
+    modulo_2::modulo_2_normal::ejercicio117();
+    modulo_2::modulo_2_normal::ejercicio118();
+    modulo_2::modulo_2_normal::ejercicio119();
+    modulo_2::modulo_2_normal::ejercicio120();
 
 }
 
