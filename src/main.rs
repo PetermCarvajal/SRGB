@@ -158,5 +158,9 @@ fn main() {
     modulo_2::normal::ejercicio119();
     modulo_2::normal::ejercicio120();
 
+    // info Dificultad Elevada:
+    //info Regla R1 (let) + Regla R4 (Enteros con Signo) + Regla R12 (println!)
+
+
 }
 
