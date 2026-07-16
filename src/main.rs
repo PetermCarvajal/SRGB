@@ -103,60 +103,60 @@ fn main() {
 
     // info Dificultad Normal: 2 Reglas a la Vez.
     // info Regla 1 (Inmutabilidad) + Regla 12 (println!)
-    modulo_2::modulo_2_normal::ejercicio79();
-    modulo_2::modulo_2_normal::ejercicio80();
-    modulo_2::modulo_2_normal::ejercicio81();
-    modulo_2::modulo_2_normal::ejercicio82();
-    modulo_2::modulo_2_normal::ejercicio83();
-    modulo_2::modulo_2_normal::ejercicio84();
+    modulo_2::normal::ejercicio79();
+    modulo_2::normal::ejercicio80();
+    modulo_2::normal::ejercicio81();
+    modulo_2::normal::ejercicio82();
+    modulo_2::normal::ejercicio83();
+    modulo_2::normal::ejercicio84();
 
     // info Regla 2 (mut Mutabilidad) + Regla 4 (Enteros con signo i8 a i128)
-    modulo_2::modulo_2_normal::ejercicio85();
-    modulo_2::modulo_2_normal::ejercicio86();
-    modulo_2::modulo_2_normal::ejercicio87();
-    modulo_2::modulo_2_normal::ejercicio88();
-    modulo_2::modulo_2_normal::ejercicio89();
-    modulo_2::modulo_2_normal::ejercicio90();
+    modulo_2::normal::ejercicio85();
+    modulo_2::normal::ejercicio86();
+    modulo_2::normal::ejercicio87();
+    modulo_2::normal::ejercicio88();
+    modulo_2::normal::ejercicio89();
+    modulo_2::normal::ejercicio90();
 
     //info Regla 3 (Shadowing) + Regla 7 (Flotantes Simples f32)
-    modulo_2::modulo_2_normal::ejercicio91();
-    modulo_2::modulo_2_normal::ejercicio92();
-    modulo_2::modulo_2_normal::ejercicio93();
-    modulo_2::modulo_2_normal::ejercicio94();
-    modulo_2::modulo_2_normal::ejercicio95();
-    modulo_2::modulo_2_normal::ejercicio96();
+    modulo_2::normal::ejercicio91();
+    modulo_2::normal::ejercicio92();
+    modulo_2::normal::ejercicio93();
+    modulo_2::normal::ejercicio94();
+    modulo_2::normal::ejercicio95();
+    modulo_2::normal::ejercicio96();
 
     // info Regla 5 (Enteros sin Signo u8 a u128) + Regla 9 (bool Booleanos)
-    modulo_2::modulo_2_normal::ejercicio97();
-    modulo_2::modulo_2_normal::ejercicio98();
-    modulo_2::modulo_2_normal::ejercicio99();
-    modulo_2::modulo_2_normal::ejercicio100();
-    modulo_2::modulo_2_normal::ejercicio101();
-    modulo_2::modulo_2_normal::ejercicio102();
+    modulo_2::normal::ejercicio97();
+    modulo_2::normal::ejercicio98();
+    modulo_2::normal::ejercicio99();
+    modulo_2::normal::ejercicio100();
+    modulo_2::normal::ejercicio101();
+    modulo_2::normal::ejercicio102();
 
     //info Regla 6 (Arquitectura usize / isize) + Regla 11 (print! sin salto)
-    modulo_2::modulo_2_normal::ejercicio103();
-    modulo_2::modulo_2_normal::ejercicio104();
-    modulo_2::modulo_2_normal::ejercicio105();
-    modulo_2::modulo_2_normal::ejercicio106();
-    modulo_2::modulo_2_normal::ejercicio107();
-    modulo_2::modulo_2_normal::ejercicio108();
+    modulo_2::normal::ejercicio103();
+    modulo_2::normal::ejercicio104();
+    modulo_2::normal::ejercicio105();
+    modulo_2::normal::ejercicio106();
+    modulo_2::normal::ejercicio107();
+    modulo_2::normal::ejercicio108();
 
     //info Regla 8 (Flotantes Doble f64) + Regla 13 (eprintln! Errores)
-    modulo_2::modulo_2_normal::ejercicio109();
-    modulo_2::modulo_2_normal::ejercicio110();
-    modulo_2::modulo_2_normal::ejercicio111();
-    modulo_2::modulo_2_normal::ejercicio112();
-    modulo_2::modulo_2_normal::ejercicio113();
-    modulo_2::modulo_2_normal::ejercicio114();
+    modulo_2::normal::ejercicio109();
+    modulo_2::normal::ejercicio110();
+    modulo_2::normal::ejercicio111();
+    modulo_2::normal::ejercicio112();
+    modulo_2::normal::ejercicio113();
+    modulo_2::normal::ejercicio114();
 
     // info Regla R10 (Caracteres Unicode char) + Regla R2 (mut Mutabilidad)
-    modulo_2::modulo_2_normal::ejercicio115();
-    modulo_2::modulo_2_normal::ejercicio116();
-    modulo_2::modulo_2_normal::ejercicio117();
-    modulo_2::modulo_2_normal::ejercicio118();
-    modulo_2::modulo_2_normal::ejercicio119();
-    modulo_2::modulo_2_normal::ejercicio120();
+    modulo_2::normal::ejercicio115();
+    modulo_2::normal::ejercicio116();
+    modulo_2::normal::ejercicio117();
+    modulo_2::normal::ejercicio118();
+    modulo_2::normal::ejercicio119();
+    modulo_2::normal::ejercicio120();
 
 }
 

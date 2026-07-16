@@ -1,2 +1,3 @@
 pub mod modulo_2;
-pub mod modulo_2_normal;
+pub mod normal;
+pub mod elevada;
