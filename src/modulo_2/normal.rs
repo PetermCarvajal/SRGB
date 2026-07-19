@@ -44,9 +44,9 @@ pub fn ejercicio82(){
     TODO 82. Declara tres variables inmutables numéricas para representar medidas (largo, ancho, profundidad). Imprime su volumen total calculándolo directamente dentro del println!.
     */
 
-    let largo:u8=100;
-    let ancho:u8=50;
-    let profundidad:u8=25;
+    let largo:u64=100;
+    let ancho:u64=50;
+    let profundidad:u64=25;
 
     println!("Volumen Total: {}",largo*ancho*profundidad);
 
@@ -312,6 +312,7 @@ pub fn ejercicio103(){
     let numero_total:usize=12165321354;
 
     print!("Procesando archivo 1 de {numero_total}");
+    println!();
 
 }
 
@@ -324,7 +325,8 @@ pub fn ejercicio104(){
     let retroceder_memoria:isize=-4;
 
     print!("Desplazamiento aplicado: ");
-    print!("{retroceder_memoria}")
+    print!("{retroceder_memoria}");
+    println!()
 
 }
 
@@ -338,6 +340,7 @@ pub fn ejercicio105() {
 
     print!("La capacidad máxima de punteros con usize es de :");
     print!("{capacidad_max}");
+    println!()
 
 }
 
@@ -350,6 +353,7 @@ pub fn ejercicio106(){
     let pos_actual:usize=5;
 
     print!("Buscando índice {}",pos_actual);
+    println!();
 
 }
 
@@ -362,6 +366,7 @@ pub fn ejercicio107(){
     let explicito=500usize;
 
     print!("Bloque de memoria asignado {explicito}");
+    println!();
 
 }
 

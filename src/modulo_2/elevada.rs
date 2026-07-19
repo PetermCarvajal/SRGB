@@ -11,7 +11,8 @@ pub fn ejercicio121(){
 
     let temperatura_local:i16=-20;
 
-    print!("La temperatura es de : {}",temperatura_media+temperatura_local)
+    print!("La temperatura es de : {}",temperatura_media+temperatura_local);
+    println!();
 
 }
 

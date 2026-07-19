@@ -55,7 +55,9 @@ pub fn ejercicio5(){
 TODO 5.	Declara una constante lógica inmutable explícita (bool) para representar si un servidor está activo.
 */
 
-    let estado:bool=true;
+    let _estado:bool=true;
+
+    println!("{}",_estado);
 
 }
 
@@ -109,10 +111,13 @@ pub fn ejercicio9(){
 TODO 9. Cambia una variable booleana de estado de false a true simulando el encendido de un motor.
 */
 
-    let mut estado:bool=false;
-    estado=true;
+    let mut _estado:bool=false;
 
-    println!("{}",estado);
+    println!("{}",_estado);
+
+    _estado=true;
+
+    println!("{}",_estado);
 
 }
 
@@ -149,8 +154,9 @@ TODO 12. Declara una variable mut de tipo i16, asígnale el valor 500, y luego c
 */
 
     let mut desconocido:i16=500;
-    desconocido=-500;
+    println!("{desconocido}");
 
+    desconocido=-500;
     println!("{}",desconocido);
 
 }
@@ -605,11 +611,11 @@ TODO 48. Calcula el área de un círculo usando un f64 para el radio y un f64 al
 
     let radio:f64=4.1256;
 
-    let PI:f64=3.141592653589793;
+    let pi:f64=3.141592653589793;
 
     let cuadrado:f64=radio*radio;
 
-    println!("El area del Circulo es: {}",PI*cuadrado);
+    println!("El area del Circulo es: {}",pi*cuadrado);
 
 }
 
