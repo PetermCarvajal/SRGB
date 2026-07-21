@@ -240,3 +240,18 @@ pub fn ejercicio_18(){
     println!("{:?}",tupla_mutable.0);
 
 }
+
+pub fn ejercicio_19(){
+
+    /*
+    TODO 19. Declara un array explícito llamado dias que contenga 7 enteros de tipo u8. Imprímelo usando {:?}.
+20. Declara un array de tipo [f32; 3] simulando la posición de un modelo 3D [1.5, 0.0, -1.5]. Imprímelo.
+21. Crea un array que dependa de la inferencia del compilador (sin poner los tipos): let numeros = [10, 20, 30]; e imprímelo.
+22. Declara un array de 5 booleanos inicializados aleatoriamente en true o false. Imprímelo en consola.
+23. Declara un array estricto de caracteres [char; 4] con las letras 'A', 'B', 'C', 'D'. Imprímelo.
+24. Declara un array inmutable de 2 elementos tipo texto &str ("Usuario", "Admin") e imprímelo
+     */
+
+    let nombres:[&str;2]=["Peter","Sua"];
+
+}
