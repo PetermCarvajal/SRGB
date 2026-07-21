@@ -161,6 +161,8 @@ pub fn ejercicio_12(){
 
 }
 
+// ! Regla 16:Acceso a Tuplas por Índice
+
 pub fn ejercicio_13(){
 
     /*
@@ -241,6 +243,8 @@ pub fn ejercicio_18(){
 
 }
 
+// ! Regla 17: Arrays
+
 pub fn ejercicio_19(){
 
     /*
@@ -309,5 +313,180 @@ pub fn ejercicio_24(){
 
     let clases:[&str;2]=["Usuario","Admin"];
 
-    prinln!("");
+    println!("{:?}",clases);
+
+}
+
+// ! Regla 18: Acceso y Mutación de Arrays
+
+pub fn ejercicio_25(){
+
+    /*
+    TODO 25. Declara un array de 4 números. Accede al primer elemento ([0]) e imprímelo usando {} estándar.
+     */
+
+    let numeros :[u8;4]=[13,23,31,50];
+
+    println!("{}",numeros[0]);
+
+}
+
+pub fn ejercicio_26(){
+
+    /*
+    TODO 26. Declara un array con las notas de 3 exámenes. Accede al último elemento ([2]) e imprímelo.
+     */
+
+    let notas :[f32;3]=[3.1,5.0,2.0];
+
+    println!("{}",notas[2]);
+
+}
+
+pub fn ejercicio_27(){
+
+    /*
+    TODO 27. Crea un array mutable de enteros mut puntajes = [10, 20, 30];. Cambia el valor del índice 1 a 50 y luego imprime el array completo.
+     */
+    let mut puntajes :[u8;3]=[10,20,30];
+
+    println!("{:?}",puntajes);
+
+    puntajes=[50,20,30];
+
+    println!("{:?}",puntajes);
+
+}
+
+pub fn ejercicio_28(){
+
+    /*
+    TODO 28. Declara un array de 2 booleanos [true, false]. En un println!, evalúa e imprime si el índice 0 es diferente != del índice 1.
+     */
+
+    let booleanos:[bool;2]=[true,false];
+
+    println!("{:?}",booleanos);
+
+}
+
+pub fn ejercicio_29(){
+
+    /*
+    TODO 29. Crea un array mutable de tres caracteres ['R', 'E', 'D']. Muta el primer índice para que sea una 'B' (cambiando la palabra a BED) e imprime el array.
+    */
+
+    let mut caracteres:[char;3]=['R','E','D'];
+
+    println!("{:?}",caracteres);
+
+    caracteres=['B','E','D'];
+
+    println!("{:?}",caracteres);
+
+}
+
+pub fn ejercicio_30(){
+
+    /*
+    TODO 30. Declara un array de flotantes [10.5, 20.2]. Imprime el resultado de restar el índice 0 al índice 1.
+     */
+
+    let flotantes :[f32;2]=[10.5,20.2];
+
+    println!("{:?}",flotantes[0]-flotantes[1]);
+
+}
+
+// ! Regla 19: Inicialización Repetida de Arrays
+
+pub fn ejercicio_31(){
+
+    /*
+    TODO 31. Declara un array de 10 posiciones, todas inicializadas en el número 0. Imprímelo usando {:?}.
+     */
+
+    let repetir:[u8;10]=[0;10];
+
+    println!("{:?}",repetir);
+
+}
+
+pub fn ejercicio_32(){
+
+    /*
+    TODO 32. Crea un buffer para una máscara de red: un array de 4 posiciones repetidas con el valor 255
+     */
+
+    let buffer:[u8;4]=[255;4];
+
+}
+
+pub fn ejercicio_33() {
+
+    /*
+    TODO 33. Declara un array que represente 50 celdas lógicas inicializadas todas en false. Usa el método .len() para imprimir el tamaño del array (no el contenido).
+     */
+
+    let celdas_logicas:[bool;50]=[false;50];
+
+    println!("{:?}",celdas_logicas.len());
+
+}
+
+pub fn ejercicio_34(){
+
+    /*
+    TODO 34. Crea un array de 12 posiciones repetitivas con el flotante 1.0 de tipo f32. (declararlo explícitamente). Imprime el tamaño del array.
+     */
+
+    let pos_repetidas:[f32;12]=[1.0;12];
+
+    println!("{:?}",pos_repetidas.len());
+
+}
+
+pub fn ejercicio_35(){
+
+    /*
+    TODO 35. Declara un array repetitivo con 5 caracteres 'X'. Imprímelo en consola para ver cómo se visualiza ['X', 'X', ...].
+     */
+
+    let rep_caracter:[char;5]=['X','X','X','X','X'];
+
+    //let rep_caracter1:[char;5]=['X';5];
+
+    println!("{:?}",rep_caracter);
+
+}
+
+pub fn ejercicio_36(){
+
+    /*
+    TODO 36. Crea un array mutable repetitivo de 3 posiciones inicializadas en 0. Muta exclusivamente la posición [1] a 100 y luego imprime todo el array.
+     */
+
+    let mut repetitivo:[u8;3]=[0;3];
+
+    println!("{:?}",repetitivo);
+
+    repetitivo=[0,100,0];
+
+    println!("{:?}",repetitivo);
+
+}
+
+// ! Regla 20: Tipo "Unidad"
+
+pub fn ejercicio_37(){
+
+    /*
+    TODO 37. Declara una variable llamada nada y asígnale explícitamente el tipo unidad () y el valor (). Imprímela con {:?}.
+38. Crea una tupla regular que contenga un entero, y como segundo elemento, un Tipo Unidad: (10, ()). Imprímela.
+39. Asigna el resultado de una macro de impresión a una variable (ej. let resultado_print = println!("Hola");). Luego, imprime resultado_print con {:?} para comprobar que Rust devuelve () silenciosamente.
+40. Declara un array de tamaño 3, donde cada elemento sea un Tipo Unidad: [(); 3]. Imprímelo.
+41. Usa destructuración para extraer un Tipo Unidad de una tupla: let (a, _) = (50, ()); e imprime la variable a.
+42. Escribe una línea solitaria con un valor Unidad (); suelto en tu código (sin asignarlo a nada) y añade un comentario documentando que esto no consume memoria y es evaluado a "nada". Compila y ejecuta.
+
+     */
 }

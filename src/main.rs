@@ -5,7 +5,6 @@ mod modulo_2;
 pub mod modulo_2_parte_2;
 
 fn main() {
-
     modulo_2::lista::ejercicios();
     //info Dificultad Facíl:
     //info Regla R14 ( Tuplas )
@@ -32,12 +31,15 @@ fn main() {
     modulo_2_parte_2::parte_2::ejercicio_17();
     modulo_2_parte_2::parte_2::ejercicio_18();
 
-    //info
+    //info Regla 17 ( Array )
     modulo_2_parte_2::parte_2::ejercicio_19();
+    modulo_2_parte_2::parte_2::ejercicio_20();
     modulo_2_parte_2::parte_2::ejercicio_21();
     modulo_2_parte_2::parte_2::ejercicio_22();
     modulo_2_parte_2::parte_2::ejercicio_23();
     modulo_2_parte_2::parte_2::ejercicio_24();
+
+    //info Regla 18 ( Acceso y Mutación de Arrays )
     modulo_2_parte_2::parte_2::ejercicio_25();
 }
 
