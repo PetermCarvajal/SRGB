@@ -482,11 +482,72 @@ pub fn ejercicio_37(){
 
     /*
     TODO 37. Declara una variable llamada nada y asígnale explícitamente el tipo unidad () y el valor (). Imprímela con {:?}.
-38. Crea una tupla regular que contenga un entero, y como segundo elemento, un Tipo Unidad: (10, ()). Imprímela.
-39. Asigna el resultado de una macro de impresión a una variable (ej. let resultado_print = println!("Hola");). Luego, imprime resultado_print con {:?} para comprobar que Rust devuelve () silenciosamente.
-40. Declara un array de tamaño 3, donde cada elemento sea un Tipo Unidad: [(); 3]. Imprímelo.
-41. Usa destructuración para extraer un Tipo Unidad de una tupla: let (a, _) = (50, ()); e imprime la variable a.
-42. Escribe una línea solitaria con un valor Unidad (); suelto en tu código (sin asignarlo a nada) y añade un comentario documentando que esto no consume memoria y es evaluado a "nada". Compila y ejecuta.
+*/
 
+    let nada:()=();
+
+    println!("{:?}",nada);
+
+}
+
+pub fn ejercicio_38(){
+
+    /*
+    TODO 38. Crea una tupla regular que contenga un entero, y como segundo elemento, un Tipo Unidad: (10, ()). Imprímela.
+    */
+
+    let tupla:(u8,())=(10,());
+
+    println!("{:?}",tupla);
+
+}
+
+pub fn ejercicio_39(){
+
+    /*
+    TODO 39. Asigna el resultado de una macro de impresión a una variable (ej. let resultado_print = println!("Hola");). Luego, imprime resultado_print con {:?} para comprobar que Rust devuelve () silenciosamente.
+    */
+
+    let resultado=println!("Hola"); // El tipo de dato es () automaticamente
+
+    println!("{:?}",resultado);
+
+}
+
+pub fn ejercicio_40(){
+
+    /*
+    TODO 40. Declara un array de tamaño 3, donde cada elemento sea un Tipo Unidad: [(); 3]. Imprímelo.lto en tu código (sin asignarlo a nada) y añade un comentario documentando que esto no consume memoria y es evaluado a "nada". Compila y ejecuta.
      */
+
+    let unidad:[();3]=[();3];
+    // info se decalra un array de 3 elementos, cada elemento del array es  () un tipo Unidad   (VOID) esto significa que este Array contiene 3 Nnada que Ocupan Nada de Memoria.
+        //info por que '()' No consume anda en memoria.
+
+    println!("{:?}",unidad);
+
+}
+
+pub fn ejercicio_41(){
+
+    /*
+    TODO 41. Usa destructuración para extraer un Tipo Unidad de una tupla: let (a, _) = (50, ()) e imprime la variable a.
+     */
+
+    let tupla:(u8,())=(50,());
+
+    let (a,())=tupla;
+
+    println!("{a}");
+
+}
+
+pub fn ejercicio_42(){
+
+    /*
+    TODO 42. Escribe una línea solitaria con un valor Unidad () suelto en tu código (sin asignarlo a nada) y añade un comentario documentando que esto no consume memoria y es evaluado a "nada". Compila y ejecuta.
+    */
+
+    () //Esto no consume memoria y es evaluado en "nada";
+
 }
