@@ -41,5 +41,15 @@ fn main() {
 
     //info Regla 18 ( Acceso y Mutación de Arrays )
     modulo_2_parte_2::parte_2::ejercicio_25();
+    modulo_2_parte_2::parte_2::ejercicio_26();
+    modulo_2_parte_2::parte_2::ejercicio_27();
+    modulo_2_parte_2::parte_2::ejercicio_28();
+    modulo_2_parte_2::parte_2::ejercicio_29();
+    modulo_2_parte_2::parte_2::ejercicio_30();
+
+    //info Regla 19 (Inicialización Repetitiva de Arrays)
+
+
+
 }
 

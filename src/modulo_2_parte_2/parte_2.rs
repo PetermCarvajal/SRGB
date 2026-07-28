@@ -551,3 +551,29 @@ pub fn ejercicio_42(){
     () //Esto no consume memoria y es evaluado en "nada";
 
 }
+
+pub fn ejercicio_43(){
+
+    /*
+    TODO  43. Declara una tupla que represente un "Clan" de Clash of Clans, conteniendo el nombre (&str) y un array mutable de 3 posiciones [u32 3] para almacenar la recolección de oro de tres días. Muta el segundo día del array dentro de la tupla e imprime la estructura completa.
+     */
+
+    let mut clan:(&str,[u32;3])=("A.V.C",[7500000,50000,125000000]);
+
+    clan=("A.V.C",[7500000,5000000,125000000]);
+
+    println!("{:?}",clan);
+
+}
+
+pub fn ejercicio_44(){
+
+    /*
+    TODO 44. Crea una tupla que contenga un identificador de paciente de una clínica ornitológica (u32) y un array de 2 elementos [f32 2] con el peso del ave antes y después del tratamiento. Accede al peso final en el array e imprímelo.
+45. Declara una tupla que agrupe un nombre de sensor y un array de 4 booleanos de estado. Modifica el tercer estado del array a true y muestra la tupla con {:?}.
+46. Simula una fila de una hoja de Excel: crea una tupla con un encabezado de columna y un array de 3 enteros. Suma los valores del array y muestra el resultado junto al nombre de la columna.
+47. Declara una tupla mutable que guarde un código de error y un array de 2 caracteres. Cambia el primer carácter del array y el código de la tupla, luego imprime el resultado.
+48. Crea una tupla con un nombre de experimento de métodos numéricos y un array de 3 flotantes f64. Muta el primer valor del array multiplicándolo por 2.0 y muestra la tupla.
+     */
+
+}
