@@ -570,10 +570,66 @@ pub fn ejercicio_44(){
 
     /*
     TODO 44. Crea una tupla que contenga un identificador de paciente de una clínica ornitológica (u32) y un array de 2 elementos [f32 2] con el peso del ave antes y después del tratamiento. Accede al peso final en el array e imprímelo.
-45. Declara una tupla que agrupe un nombre de sensor y un array de 4 booleanos de estado. Modifica el tercer estado del array a true y muestra la tupla con {:?}.
-46. Simula una fila de una hoja de Excel: crea una tupla con un encabezado de columna y un array de 3 enteros. Suma los valores del array y muestra el resultado junto al nombre de la columna.
-47. Declara una tupla mutable que guarde un código de error y un array de 2 caracteres. Cambia el primer carácter del array y el código de la tupla, luego imprime el resultado.
-48. Crea una tupla con un nombre de experimento de métodos numéricos y un array de 3 flotantes f64. Muta el primer valor del array multiplicándolo por 2.0 y muestra la tupla.
      */
+
+    let identificador:(u32,[f32;2])=(1000000000,[1.25,2.5]);
+
+    println!("{:?}",identificador.1[1]);
+
+    }
+
+pub fn ejercicio_45(){
+
+    /*
+     TODO 45. Declara una tupla que agrupe un nombre de sensor y un array de 4 booleanos de estado. Modifica el tercer estado del array a true y muestra la tupla con {:?}.
+    */
+
+    let mut dispositivo:(bool,bool,bool,bool)=(false,false,false,false);
+
+    dispositivo.2=true;
+
+    println!("{:?}",dispositivo);
+
+}
+
+pub fn ejercicio_46(){
+    /*
+     TODO 46. Simula una fila de una hoja de Excel: crea una tupla con un encabezado de columna y un array de 3 enteros. Suma los valores del array y muestra el resultado junto al nombre de la columna.
+    .*/
+
+    let fila_excel:(&str,[u8;3])=("edades",[19,27,49]);
+
+    let suma:u8=fila_excel.1[0]+fila_excel.1[1]+fila_excel.1[2];
+
+    println!("Suma de {:?}: {:?}",fila_excel.0,suma);
+
+}
+
+pub fn ejercicio_47(){
+
+    /*
+    TODO 47. Declara una tupla mutable que guarde un código de error y un array de 2 caracteres. Cambia el primer carácter del array y el código de la tupla, luego imprime el resultado.
+     */
+
+    let mut lista:(&str,[char;2])=("q1w2e3",['A','A']);
+
+    lista.0="q2w2e3";
+    lista.1[0]='B';
+
+    println!("{:?}",lista);
+
+}
+
+pub fn ejercicio_48(){
+
+    /*
+    TODO 48. Crea una tupla con un nombre de experimento de métodos numéricos y un array de 3 flotantes f64. Muta el primer valor del array multiplicándolo por 2.0 y muestra la tupla
+     */
+
+    let mut experimento_metodos_numericos:(&str,[f64;3])=("Agente Naranja",[1.3656851656,313.13532,1.365681646]);
+
+    experimento_metodos_numericos.1[0]=experimento_metodos_numericos.1[0]*2.0;
+
+    println!("{:?}",experimento_metodos_numericos);
 
 }
