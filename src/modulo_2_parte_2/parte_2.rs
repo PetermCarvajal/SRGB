@@ -633,3 +633,95 @@ pub fn ejercicio_48(){
     println!("{:?}",experimento_metodos_numericos);
 
 }
+
+pub fn ejercicio_49(){
+
+    /*
+    TODO 49. Declara un array de 2 elementos, donde cada elemento sea una tupla (i32, i32). Accede al primer elemento del array, destrúcturalo en variables x e y, e imprime su suma.
+    */
+
+    let tuplas_inseption:[(i32,i32);2]=[(10,3),(12,2)];
+
+    println!("primer elemento? {:?}",tuplas_inseption[0].1);
+
+    let x:i32=tuplas_inseption[0].0;
+
+    let y:i32=tuplas_inseption[0].1;
+
+    println!("{:?}",x+y);
+
+}
+
+pub fn ejercicio_50(){
+
+    /*
+    TODO 50. Crea una tupla que contenga un nombre de ave y un array de 3 medidas de envergadura. Destructura la tupla para obtener el nombre y el array por separado. Imprime el array.
+     */
+
+    let ave:(&str,[u8;3])=("Aura Tiñosa",[65,81,183]);
+
+    let ave_nombre:&str=ave.0;
+    let ave_envergadura:[u8;3]=ave.1;
+
+    println!("Nombre del Ave:{:?} \nEnvergadura del Ave:{:?}",ave_nombre,ave_envergadura);
+
+}
+
+pub fn ejercicio_51(){
+
+    /*
+    TODO 51. Declara una tupla con un ID de usuario y un array de 2 permisos [bool 2]. Usa destructuración para extraer el ID y el array. Luego, imprime si el primer permiso del array es true.
+     */
+
+    let usuario:(&str,[bool;2])=("10417452856396",[true,true]);
+
+    let id_usuario:&str=usuario.0;
+    let permisos_usuario:[bool;2]=usuario.1;
+
+    println!("permiso usuario? {:?}",permisos_usuario[0]);
+
+}
+
+pub fn ejercicio_52(){
+
+    /*
+    TODO 52. Simula una respuesta de base de datos: una tupla con un booleano de éxito y un array de 4 bytes u8. Destructura la tupla e imprime los bytes usando el formato de depuración.
+     */
+
+    let ans_db:(bool,[u8;4])=(true,[255,255,125,078]);
+
+    let ans_bool:bool=ans_db.0;
+    let andarr:[u8;4]=ans_db.1;
+
+}
+
+pub fn ejercicio_53(){
+
+    /*
+    TODO 53. Declara una tupla que represente una fecha (u16, [u8 3]) (año y un array con día, mes, hora). Destructura la tupla y muestra el año y el mes extraídos del array.
+     */
+
+    let fecha:(u16,[u8;3])=(2026,[25,8,11]);
+
+    let año:u16=fecha.0;
+    let mes:[u8;3]=fecha.1;
+
+    println!("año y mes de publicación {:?}/{:?}",año,mes[1]);
+
+}
+
+pub fn ejercicio_54(){
+
+    /*
+    TODO 54. Crea una tupla con un nivel de prioridad (char) y un array de 2 flotantes. Destructura ambos valores y muestra una oración combinándolos.
+     */
+
+    let prioridad:(char,[f32;2])=('Z',[1.315,9.999]);
+
+    let nivel_prioridad:char=prioridad.0;
+    let cola:[f32;2]=prioridad.1;
+
+    println!("Te encuentras en el puesto {:?} de {:?} y tu prioridad es {nivel_prioridad}",cola[0],cola[1]);
+
+}
+

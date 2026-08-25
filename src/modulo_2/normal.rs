@@ -87,6 +87,8 @@ pub fn ejercicio85(){
     let mut temperatura:i8=-10;
     temperatura=temperatura-5;
 
+    print!("temperatura {temperatura}");
+
 }
 
 pub fn ejercicio86(){
@@ -98,6 +100,8 @@ pub fn ejercicio86(){
     let mut balance:i32=500;
     balance=balance+1000;
 
+    print!("balance: {balance}");
+
 }
 
 pub fn ejercicio87(){
@@ -108,6 +112,8 @@ pub fn ejercicio87(){
 
     let mut altitud:i16=0;
     altitud=altitud-150;
+
+    println!("altitud: {altitud}")
 
 }
 

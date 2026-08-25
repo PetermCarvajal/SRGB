@@ -68,4 +68,12 @@ pub fn ejercicios(){
     modulo_2_parte_2::parte_2::ejercicio_46();
     modulo_2_parte_2::parte_2::ejercicio_47();
     modulo_2_parte_2::parte_2::ejercicio_48();
+
+    //info Regla 15 (Destructuración de Tuplas) + Regla 17 (Arrays Básicos)
+    modulo_2_parte_2::parte_2::ejercicio_49();
+    modulo_2_parte_2::parte_2::ejercicio_50();
+    modulo_2_parte_2::parte_2::ejercicio_51();
+    modulo_2_parte_2::parte_2::ejercicio_52();
+    modulo_2_parte_2::parte_2::ejercicio_53();
+    modulo_2_parte_2::parte_2::ejercicio_54();
 }
