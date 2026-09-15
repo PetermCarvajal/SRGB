@@ -1044,3 +1044,57 @@ pub fn ejercicio_78(){
     println!("{:?}",array1);
 
 }
+
+//! Dificultad Heroica
+//Info Regla R14 (Tuplas Básicas) + Regla R15 (Destructuración) + Regla R17 (Arrays) + Regla R18 (Mutación de Arrays)
+
+pub fn ejercicio_79({
+
+    /*
+    TODO 85. Declara una tupla mutable que contenga un ID (u32) y un array de 3 puntajes [u16 3]. Accede al array a través de la tupla (usando .1) para mutar el segundo puntaje (índice 1). Luego, destructura la tupla completa en las variables id y puntajes e imprime el nuevo valor del array usando la variable extraída.
+     */
+
+    let mut tupla:(u32,[u16;3])=(1000,[1,2,3]);
+
+    tupla.1[1]=5;
+
+    let (id,puntajes)=tupla;
+
+    println!("{puntajs}");
+
+}
+
+pub fn ejercicio_80(){
+
+    /*
+    TODO 86. Crea un array mutable de 2 elementos, donde cada elemento sea una tupla (i32, bool). Accede al primer elemento del array ([0]) y muta el booleano de la tupla (usando .1) a true. Luego, destructura esa misma tupla del array en numero y estado, e imprime ambas variables.
+    */
+
+    let mut array:[(i32, bool);2]=[(3,false);2];
+
+    array[0].1=true;
+
+    let array1=array[0];
+
+    let array2=array[1];
+
+    let (numero,estado)=array1;
+
+    let (numero1,estado1)=array2;
+
+    println!("{numero} | {numero1} | {estado} | {estado1}");
+
+}
+
+pub fn ejercicio_81(){
+
+    /*
+    TODO 87. Declara una tupla mutable con el nombre de un sensor (&str) y un array de 4 lecturas flotantes [f32 4]. Muta la última lectura del array accediendo directamente con índices encadenados (ej. tupla.1[3]). Aplica destructuración para separar el nombre del array, e imprime el array mutado.
+88. Simula una matriz de coordenadas: declara un array de 3 posiciones donde cada celda es una tupla mutable (f64, f64). Muta el eje Y de la última tupla del array ([2].1). Destructura esa tupla específica en x e y e imprime la coordenada modificada.
+89. Declara una tupla mutable que agrupe dos arrays: ([10, 20], [30, 40]). Muta el primer array (índice 0) usando .0[0] = 99. Destructura la tupla en array_a y array_b. Suma matemáticamente el primer elemento de array_a con el último de array_b e imprime el resultado.
+90. Crea una tupla anidada mutable: (1, ([100, 200], true)). Accede a lo más profundo de la estructura usando .1.0[1] para mutar el valor 200 a 500. Luego, destructura la estructura completa en un solo paso (ej. let (id, (arreglo, flag)) = tupla;) e imprime el arreglo modificado.
+     */
+
+    let mut
+
+}
