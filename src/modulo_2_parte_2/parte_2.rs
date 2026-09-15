@@ -725,3 +725,322 @@ pub fn ejercicio_54(){
 
 }
 
+// Info Regla R16 (Acceso Directo por Índice en Tuplas) + Regla R19 (Inicialización Repetitiva de Arrays)
+
+pub fn ejercicio_55(){
+    /*
+    TODO 55. Declara una tupla que contenga un nombre de tabla de Excel y un array inicializado repetitivamente con 10 ceros [0; 10]. Accede al array usando el índice .1 de la tupla e imprime su longitud.
+     */
+
+    let excel :(&str,[u8;10])= ("Tienda",[0;10]);// 0 repetido 10 veces
+
+}
+
+pub fn ejercicio_56() {
+
+    /*
+    TODO 56. Crea una tupla que guarde un estado de carga y un array de 1024 bytes inicializados en 0. Usa el acceso por punto (ej. .1) para modificar el primer byte del array a 1.
+     */
+
+    let mut estado_carga:(bool,[u16;1024])= (false,[0;1024]);
+
+    estado_carga.1[0] =1;
+
+}
+
+pub fn ejercicio_57(){
+
+    /*
+    TODO 57. Declara una tupla con un valor constante f64 y un array de 5 booleanos inicializados en true. Accede al valor constante mediante .0 y multiplícalo por la longitud del array accedido por .1.
+     */
+
+    let mut valor_constante:(f64,[bool;5])=(3.1415,[true;5]);
+
+    valor_constante.0=valor_constante.0*valor_constante.1.len() as f64;
+
+    println!("???: {:?}",valor_constante);
+
+}
+
+pub fn ejercicio_58() {
+    /*
+    TODO 58. Simula un registro de producción: una tupla con un identificador y un array de 100 flotantes inicializados en 1.0. Accede al array y cambia el valor de su última posición.
+     */
+
+    let mut registro_produccion: (u128, [f32; 100]) = (3656458646, [1.0; 100]);
+
+    registro_produccion.1[99]=0.0;
+
+}
+
+pub fn ejercicio_59(){
+
+    /*
+    TODO 59. Declara una tupla mutable. En el índice .0 pon un carácter y en el .1 un array de 4 posiciones con el valor '?'. Cambia el carácter del índice .0 e imprime la tupla.
+     */
+
+    let mut nose :(char,[char;4])=('º',['?';4]);
+
+    nose.0='ª';
+
+}
+
+pub fn ejercicio_60(){
+
+    /*
+    TODO 60. Crea una tupla que contenga un tipo de dato y un array de 8 posiciones inicializado en false. Usa el acceso por índice de la tupla para imprimir solo el array.
+     */
+
+    let incognita:(u8,[bool;8])=(128,[false;8]);
+
+    println!("{:?}",incognita.1);
+
+}
+
+//Info Regla R20 (El Tipo Unidad ()) + Regla R14 (Tuplas Básicas) o R17 (Arrays)
+
+pub fn ejercicio_61(){
+
+    /*
+    TODO 61. Declara una tupla que contenga un identificador de proceso, un booleano y el Tipo Unidad (). Imprímela para observar cómo se representa el () dentro de una estructura heterogénea.
+     */
+
+    let hetereogenea:(u8,bool,())=(18,false,());
+
+    println!("{:?}",hetereogenea);
+
+}
+
+pub fn ejercicio_62(){
+
+    /*
+    TODO 62. Crea un array de 3 elementos donde cada elemento sea una tupla que contenga un número y un Tipo Unidad (i32, ()). Imprime el array completo.
+     */
+
+    let array:[(u8,());3]=[(12,()),(14,()),(16,())];
+
+    println!("{:?}",array);
+
+}
+
+pub fn ejercicio_63(){
+
+    /*
+    TODO 63. Declara una tupla que agrupe un array de 2 enteros y un Tipo Unidad. Accede al Tipo Unidad mediante su índice de tupla e imprímelo.
+     */
+
+    let agrupar:([u8;2],())=([12,13],());
+
+}
+
+pub fn ejercicio_64(){
+
+    /*
+    TODO 64. Simula una función de Excel que no devuelve valor: crea una tupla con el nombre de la función "GUARDAR" y un Tipo Unidad. Destructura la tupla e imprime solo el nombre.
+     */
+
+    let funcion:(&str,())=("GUARDAR",());
+
+    let (nombre,b)=funcion;
+
+    println!("{}",nombre);
+
+}
+
+pub fn ejercicio_65(){
+
+    /*
+    TODO 65. Declara un array mutable de 2 tipos unidad [() 2]. Intenta asignar el valor de una posición a la otra e imprime el array.
+     */
+
+    let mut arr:[();2]=[();2];
+
+    arr[1]=arr[0];
+
+    println!("{:?} {:?}",arr[0],arr[1]);
+
+}
+
+pub fn ejercicio_66(){
+
+    /*
+    TODO 66. Crea una tupla anidada donde el elemento más interno sea un Tipo Unidad: (1, (true, ())). Accede al Tipo Unidad usando índices encadenados y muéstralo.
+     */
+
+    let tupla_anidada:(u8,(bool,()))=(1,(true,()));
+
+    println!("{:?}",tupla_anidada.1.1);
+
+}
+
+// ! Dificultad Elevada
+// Info Regla R14 (Tuplas) + Regla R15 (Destructuración) + Regla R17 (Arrays)
+
+pub fn ejercicio_67(){
+
+    /*
+    TODO// 67. Declara una tupla que contenga un array de 3 enteros [i32 3] y un flotante f64. Destructura la tupla en dos variables (mediciones y promedio) e imprime la variable del array utilizando el formateador de depuración {:?}.
+   */
+
+    let tupla:([i32;3],f64)=([14,16,18],3.141516);
+
+    let (mediciones,promedio)=tupla;
+
+    println!("{:?}",mediciones);
+
+}
+
+pub fn ejercicio_68(){
+
+    /*
+    TODO 68. Crea un array de 2 elementos, donde cada elemento sea una tupla (&str, u32). Accede al primer elemento del array ([0]), destrúcturalo en nombre y edad, e imprímelos en una oración completa.
+     */
+
+  let array:[(&str,u32);2]=[("Juan",32),("Camilo",16)];
+
+
+
+}
+
+pub fn ejercicio_69(){
+
+    /*
+    TODO 69. Declara una tupla que represente a un estudiante universitario: su ID (u32) y un array con sus 3 notas parciales [f32 3]. Destructura la tupla, calcula matemáticamente el promedio sumando los índices del array extraído, e imprime el resultado final.
+    */
+
+    let estudiante_universitario:(u32,[f32;3])=(1234,[1.5,2.0,4.5]);
+
+    let (a,b)=estudiante_universitario;
+    let promedio:f32=b[0]+b[1]+b[2];
+
+    println!("Promedio: {}",promedio)
+
+}
+
+pub fn ejercicio_70(){
+    /*
+    TODO 70. Crea una tupla que agrupe un booleano de estado y un array estricto de 4 caracteres [char 4]. Usa destructuración para aislar el array e imprímelo en consola completo para verificar su contenido.
+     */
+
+    let tupla_0:(bool,[char;4])=(true,['P','I','Y','R']);
+
+    let (a,b)=tupla_0;
+
+    println!("{:?}", b);
+
+}
+
+pub fn ejercicio_71(){
+
+    /*
+    TODO 71. Declara un array que contenga 3 tuplas idénticas en tipo: [(i32, f64) 3]. Accede al índice 1 del array, destructura esa tupla específica en x e y, y multiplica ambos valores imprimiendo el resultado.
+     */
+
+    let array :[(i32,f64);3]=[(10,1.0),(20,2.0),(30,3.0)];
+
+    let (x,y)=array[0];
+
+    println!("Resulatdo: {:?}",x as f64*y);
+
+}
+
+pub fn ejercicio_72(){
+
+    /*
+    TODO 72. Crea una estructura anidada: una tupla que contenga un array de 2 booleanos y un número u8. Destructura la tupla principal para extraer el array y luego imprime el valor del primer booleano de ese array extraído.
+     */
+
+    let anidada:([bool;2],u8)=([true,false],128);
+
+    let (a,b)=anidada;
+
+    println!("{:?}",a[0]);
+
+}
+
+// Regla R16 (Indexación de Tuplas) + Regla R18 (Mutación de Arrays) + Regla R19 (Inicialización Repetitiva)
+
+pub fn ejercicio_73(){
+    /*
+    TODO 73. Declara una tupla mutable que contenga un texto "Buffer" y un array inicializado repetitivamente con 5 ceros [0 5]. Accede al array a través del índice de la tupla (.1), muta su tercer elemento (índice 2) asignándole el valor 100, e imprime la tupla completa.
+    */
+
+    let mut tupla_mutable:(&str,[u8;5])=("Buffer",[0;5]);
+
+    tupla_mutable.1[2]=100;
+
+    println!("{:?}",tupla_mutable);
+
+}
+
+pub fn ejercicio_74(){
+
+    /*
+    TODO 74. Crea un array mutable de 3 tuplas inicializadas repetitivamente: [(0, 0) 3]. Accede a la primera tupla del array ([0]) y usa la indexación de tupla (.1) para mutar el segundo valor a 50. Imprime el array.
+     */
+
+    let mut array:[(u8,u8);3]=[(0,0),(1,1),(2,2)];
+
+    array[(0)].1=50;
+
+    println!("{:?}",array);
+
+}
+
+pub fn ejercicio_75(){
+
+    /*
+    TODO 75. Declara una tupla mutable que albergue un array repetitivo de 10 booleanos en false. Usa el acceso por punto (.0) para llegar al array, muta el último elemento ([9]) a true, e imprime el array usando la tupla.
+    */
+
+    let mut repetitivo:(bool,bool,bool,bool,bool,bool,bool,bool,bool,bool)=(true,true,true,true,true,true,true,false,false,false);
+
+    repetitivo.9=true;
+
+    println!("{:?}",repetitivo);
+
+}
+
+pub fn ejercicio_76(){
+
+    /*
+    TODO 76. Simula un puntero dinámico: crea una tupla mutable con un array repetitivo [1.0f32 4] en la posición 0, y un índice usize (ej. 2) en la posición 1. Usa el valor de .1 para acceder dinámicamente al array en .0 y mutar ese elemento a 99.9. Imprime la tupla.
+    */
+
+    let mut puntero:([f32;4])=([0.0,1.0,2.0,3.0]);
+
+    puntero[1]=99.9;
+
+    println!("{:?}",puntero);
+
+}
+
+pub fn ejercicio_77(){
+
+    /*
+    TODO 77. Declara una tupla que contenga dos arrays repetitivos: ([0 5], [1 5]). Muta el índice 4 del primer array (accediendo con .0) y el índice 0 del segundo array (accediendo con .1). Imprime la estructura resultante.
+     */
+
+    let mut array:([u8;5],[u8;5])=([0;5],[1;5]);
+
+    array.0[4]=99;
+
+    array.1[0]=89;
+
+    println!("{:?}",array);
+
+}
+
+pub fn ejercicio_78(){
+
+    /*
+    TODO 78. Crea una tupla con un array repetitivo de 8 caracteres guion ['-' 8]. Accede al array mediante la indexación de tupla y cambia el carácter del índice 4 por una 'X' (simulando un impacto en un radar). Imprime la tupla.
+     */
+
+    let mut array1:([char;8])=(['-';8]);
+
+    array1[4]='X';
+
+    println!("{:?}",array1);
+
+}

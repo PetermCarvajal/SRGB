@@ -76,4 +76,28 @@ pub fn ejercicios(){
     modulo_2_parte_2::parte_2::ejercicio_52();
     modulo_2_parte_2::parte_2::ejercicio_53();
     modulo_2_parte_2::parte_2::ejercicio_54();
+
+    //Info Regla R16 (Acceso Directo por Índice en Tuplas) + Regla R19 (Inicialización Repetitiva de Arrays)
+    modulo_2_parte_2::parte_2::ejercicio_55();
+    modulo_2_parte_2::parte_2::ejercicio_56();
+    modulo_2_parte_2::parte_2::ejercicio_57();
+    modulo_2_parte_2::parte_2::ejercicio_58();
+    modulo_2_parte_2::parte_2::ejercicio_59();
+    modulo_2_parte_2::parte_2::ejercicio_60();
+
+    //Info Regla R20 (El Tipo Unidad ()) + Regla R14 (Tuplas Básicas) o R17 (Arrays)
+    modulo_2_parte_2::parte_2::ejercicio_61();
+    modulo_2_parte_2::parte_2::ejercicio_62();
+    modulo_2_parte_2::parte_2::ejercicio_63();
+    modulo_2_parte_2::parte_2::ejercicio_64();
+    modulo_2_parte_2::parte_2::ejercicio_65();
+    modulo_2_parte_2::parte_2::ejercicio_66();
+
+    //Info Regla R14 (Tuplas) + Regla R15 (Destructuración) + Regla R17 (Arrays)
+    modulo_2_parte_2::parte_2::ejercicio_67();
+    modulo_2_parte_2::parte_2::ejercicio_68();
+    modulo_2_parte_2::parte_2::ejercicio_69();
+    modulo_2_parte_2::parte_2::ejercicio_70();
+    modulo_2_parte_2::parte_2::ejercicio_71();
+    modulo_2_parte_2::parte_2::ejercicio_72();
 }

@@ -3,6 +3,7 @@
  */
 mod modulo_2;
 pub mod modulo_2_parte_2;
+pub mod modulo_4;
 
 fn main() {
     //modulo_2::lista::ejercicios();

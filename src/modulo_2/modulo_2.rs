@@ -170,7 +170,7 @@ TODO 13. Usa shadowing para sumar 1 a una variable inmutable que indica el nivel
 */
 
     let lvlusuario:u8=5;
-    let lvlusuario:u8=6;
+    let lvlusuario:u8=lvlusuario+1;
 
     println!("{}",lvlusuario);
 
@@ -182,7 +182,7 @@ pub fn ejercicio14(){
 TODO 14. Usa shadowing para cambiar drásticamente el tipo de dato de una variable (inicia como texto "100" y hazle shadowing para que sea el número 100).
 */
 
-    let shadowing:String=String::from("100");
+    let _shadowing:String=String::from("100");
     let shadowing:u8=100;
 
     println!("{}",shadowing);
@@ -222,10 +222,10 @@ pub fn ejercicio17(){
 /*
 TODO 17. Aplica shadowing múltiple en cascada (tres veces seguidas sobre la misma variable) para multiplicar, restar y dividir un número.
 */
-    let mut numsrd:u8=15;
-    let mut numsrd:u8 =numsrd*7;
-    let mut numsrd:u8=numsrd-3;
-    let mut numsrd:u8=numsrd/11;
+    let numsrd:u8=15;
+    let numsrd:u8 =numsrd*7;
+    let numsrd:u8=numsrd-3;
+    let numsrd:u8=numsrd/11;
 
     println!("{}",numsrd);
 
@@ -235,10 +235,10 @@ pub fn ejercicio18() {
     /*
     TODO 18. Demuestra el shadowing con bloques internos: crea una variable externa, hazle shadowing dentro de unas llaves { }, e imprímela dentro y fuera para ver la diferencia.
     */
-    let mut global: u8 = 200;
+    let global: u8 = 200;
 
     {
-        let mut global: u8 = global + 10;
+        let global: u8 = global + 10;
         println!("{}", global);
     }
 
@@ -266,6 +266,8 @@ TODO 20. Declara un entero estándar (i32) para representar el saldo negativo de
 */
 
     let entero:i32=-100000;
+
+    print!("{entero}");
 }
 
 pub fn ejercicio21(){
@@ -286,6 +288,8 @@ TODO 22. Declara el entero más masivo disponible (i128) con un valor negativo d
 */
 
     let enteromas:i128=-123456789123456789123456789123;
+
+    print!("{enteromas}");
 
 }
 
