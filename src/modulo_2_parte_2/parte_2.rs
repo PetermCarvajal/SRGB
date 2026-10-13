@@ -1045,10 +1045,10 @@ pub fn ejercicio_78(){
 
 }
 
-//! Dificultad Heroica
+// ! Dificultad Heroica
 //Info Regla R14 (Tuplas Básicas) + Regla R15 (Destructuración) + Regla R17 (Arrays) + Regla R18 (Mutación de Arrays)
 
-pub fn ejercicio_79({
+pub fn ejercicio_79(){
 
     /*
     TODO 85. Declara una tupla mutable que contenga un ID (u32) y un array de 3 puntajes [u16 3]. Accede al array a través de la tupla (usando .1) para mutar el segundo puntaje (índice 1). Luego, destructura la tupla completa en las variables id y puntajes e imprime el nuevo valor del array usando la variable extraída.
@@ -1060,7 +1060,7 @@ pub fn ejercicio_79({
 
     let (id,puntajes)=tupla;
 
-    println!("{puntajs}");
+    println!("{:?}",puntajes);
 
 }
 
@@ -1094,6 +1094,7 @@ pub fn ejercicio_81(){
 89. Declara una tupla mutable que agrupe dos arrays: ([10, 20], [30, 40]). Muta el primer array (índice 0) usando .0[0] = 99. Destructura la tupla en array_a y array_b. Suma matemáticamente el primer elemento de array_a con el último de array_b e imprime el resultado.
 90. Crea una tupla anidada mutable: (1, ([100, 200], true)). Accede a lo más profundo de la estructura usando .1.0[1] para mutar el valor 200 a 500. Luego, destructura la estructura completa en un solo paso (ej. let (id, (arreglo, flag)) = tupla;) e imprime el arreglo modificado.
      */
+
 
 
 
